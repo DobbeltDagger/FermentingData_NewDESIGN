@@ -1,0 +1,34 @@
+{% extends "base.njk" %}
+
+
+<!-- breadcrumbs above columns -->
+{% block breadCrumbs %}
+  <p><a href='/commissions'>&uarr; Return to all commissions overview</a></p>
+{% endblock breadCrumbs %}
+
+
+<!-- content in left column ---------------------------------------------- -->
+{% block leftContent %}
+
+  <!-- single resource -->
+  {{ content | safe }}
+  <p>Tags: <i>
+    {% for tag in tags %}
+      {{ tag }}{% if loop.last %}
+      {% else %},
+      {% endif %}
+    {% endfor %}
+  </i></p>
+
+{% endblock leftContent %}
+
+
+<!-- content in right column --------------------------------------------- -->
+{% block rightContent %}
+
+  
+
+  <h2>Gallery</h2>
+  <p>Some gallery could be here</p>
+
+{% endblock rightContent %}

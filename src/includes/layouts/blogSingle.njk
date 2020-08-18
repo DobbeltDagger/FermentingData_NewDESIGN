@@ -1,0 +1,45 @@
+{% extends "base.njk" %}
+
+
+
+<!-- breadcrumbs above columns -->
+{% block breadCrumbs %}
+  <p><a href='/'>&uarr; Return to front page</a></p>
+{% endblock breadCrumbs %}
+
+
+<!-- content in left column ---------------------------------------------- -->
+{% block leftContent %}
+
+  <!-- single resource -->
+  {{ content | safe }}
+  <p>Tags: <i>
+    {% for tag in tags %}
+      {{ tag }}{% if loop.last %}
+      {% else %},
+      {% endif %}
+    {% endfor %}
+  </i></p>
+
+{% endblock leftContent %}
+
+
+<!-- content in right column --------------------------------------------- -->
+{% block rightContent %}
+
+  <div class="galleryWrapper">
+    <ul>
+      {% for img in gallery %}
+        <li>
+          {% if img.caption !== '' %}
+            <img src='{{ img.url }}' title='{{ img.caption }}' alt='{{ img.caption }}'/>
+            <div class='caption'>{{ img.caption }}</div>
+          {% else %}
+            <img src='{{ img.url }}' />
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+{% endblock rightContent %}

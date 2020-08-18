@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Fermenting Data">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png">
+  <title>Fermenting Data</title>
+  <link href="/assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="pageWrapper">
+
+    <div id='menuWrapper' class='unselectable'>
+  <div id='btnWrapper'>
+    <a id='burger'>
+      <div id='crossIcon' class='hide'>
+        <svg id='crossSvg' stroke='currentColor' fill='currentColor' stroke-width='0' viewbox='0 0 24 24' size='3rem' height='3rem' width='3rem'>
+          <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z' />
+        </svg>
+      </div>
+    </a>
+  </div>
+
+  <!-- moved menu list -->
+  <div id="menuList" class='hide'>
+    <div class='headerWrapper'>
+      <h1>&nbsp;</h1>
+    </div>
+    <ul class="mobileNav"><li class="listItem"><a href="/" class="anchor">Frontpage</a></li>
+<li class="listItem"><a href="/workshops/" class="anchor">Workshops</a></li>
+<li class="listItem"><a href="/commisions/" class="anchor">Commisions</a></li>
+<li class="listItem"><a href="/Repository/" class="anchor">Repository</a></li>
+<li class="listItem"><a href="/about/" class="anchor">About</a></li></ul>
+  </div>
+</div>
+
+    <!-- sections -->
+    <section id="mainLeft">
+      <header class='headerWrapper'>
+  <div id='logoWrapper'>
+    <div id='wide'>
+      <a href="/"><h1>Fermenting Data</h1></a>
+    </div>
+    <div id='narrow'><a href="/"><h1>FD</h1></a></div>
+  </div>
+</header>
+      
+
+  <!-- <h2>Previous Workshops</h2> -->
+  <div class='blogWrapper'>
+    
+      <div class='blogItem'>
+        <a href="">
+          <img src="/assets/images/blog/large/cabbage.jpg">
+        </a>
+        <p>Second post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, leo a faucibus lobortis, arcu libero semper nisl, quis rutrum sapien nunc ac ex. Cras eget quam consectetur, tincidunt purus quis, fermentum ante. Suspendisse arcu dolor, congue vel mattis nec, sagittis id turpis.</p>
+      </div>
+    
+      <div class='blogItem'>
+        <a href="">
+          <img src="/assets/images/blog/large/cabbage.jpg">
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat, leo a faucibus lobortis, arcu libero semper nisl, quis rutrum sapien nunc ac ex. Cras eget quam consectetur, tincidunt purus quis, fermentum ante. Suspendisse arcu dolor, congue vel mattis nec, sagittis id turpis.</p>
+      </div>
+    
+  </div>
+  
+
+    </section>
+
+    <section id="mainRight">
+      
+
+  <div class='headerWrapper'>
+    <!-- <h2>workshops</h2> -->
+  </div>
+
+  <h2>Fermenting Data is ...</h2>
+  <p>This paragraph briefly describes the concepts of this project. It's four or five lines long -and there is a link to the about page ... to read more</p>
+
+  <!-- 
+  <h2>Previous Workshops</h2>
+  <div class='workshopWrapper'>
+    
+      <div class='ws'>
+        <div class='number'>1.</div>
+        <div class='info'><span class="date">Apr 1 &#39;19, 16.30–18.30 →</span>
+           Second workshop. Proin ut eleifend est. Integer mattis neque ligula, at laoreet diam pharetra non. Ut consectetur felis neque. Pellentesque sollicitudin neque eget nunc malesuada blandit. Nam ultricies erat ipsum, pretium pretium erat dignissim nec. <a href="" target="_blank"></a>
+        </div>
+      </div>
+    
+      <div class='ws'>
+        <div class='number'>0.</div>
+        <div class='info'><span class="date">Feb 9 &#39;19 →</span>
+           First workshop. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac massa justo. Donec nec vulputate nisi, ac ultricies nulla. Donec iaculis vestibulum risus id egestas. Integer ipsum felis, aliquet in neque in, mollis vestibulum dolor. <a href="https://pcdaarhus.net" target="_blank">Processing Community Day @Aarhus &#39;19</a>
+        </div>
+      </div>
+    
+  </div>
+  <p>&nbsp;</p>
+  <p style="text-align: center">+ + + + - -  + + + + - -  + + + +</p> -->
+
+
+    </section>
+
+  </div>
+
+  <!-- scripts -->
+  <script src='/assets/js/functions.js'></script>
+  <script>
+
+    // all is loaded
+    window.addEventListener("DOMContentLoaded", function() {
+      console.log("All is loaded");
+
+      let burgerBtn = document.getElementById('burger');
+      burgerBtn.addEventListener('click', function() {
+        console.log("button was clicked");
+        document.getElementById('menuList').classList.toggle('hide');
+        document.getElementById('crossIcon').classList.toggle('hide');
+      });
+
+      // can i do this here?
+      linkopener(true);
+
+      // on resize
+      window.onresize = resize;
+      resize();
+
+    })
+  </script>
+</body>
+

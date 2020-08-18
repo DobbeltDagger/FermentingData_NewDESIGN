@@ -1,0 +1,27 @@
+{% extends "base.njk" %}
+
+<!-- content in left column ---------------------------------------------- -->
+{% block leftContent %}
+
+  <!-- single resource -->
+  {{ content | safe }}
+  <p>Tags: <i>
+    {% for tag in tags %}
+      {{ tag }}{% if loop.last %}
+      {% else %},
+      {% endif %}
+    {% endfor %}
+  </i></p>
+
+{% endblock leftContent %}
+
+
+<!-- content in right column --------------------------------------------- -->
+{% block rightContent %}
+
+  <p><a href='/workshops'>&uarr; Return to all workshop overview</a></p>
+
+  <h2>Gallery</h2>
+  <p>Some gallery could be here</p>
+
+{% endblock rightContent %}

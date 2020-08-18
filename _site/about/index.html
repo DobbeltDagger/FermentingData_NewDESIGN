@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Fermenting Data">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/assets/images/favicon.png" sizes="128x128" type="image/png">
+  <title>Fermenting Data</title>
+  <link href="/assets/css/grid.css" rel="stylesheet" />
+  <link href="/assets/css/style3.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="pageWrapper">
+    
+    
+    <div class='insidePage'>
+      
+      <div id='menuWrapper' class='unselectable'>
+
+  <div class='Grid Grid--guttersLg'>
+  
+    <div class='Grid-cell g2of5'>
+      <div id='logoWrapper'>
+        <div id='wide'>
+          <h1><a href="/">Fermenting Data</a></h1>
+        </div>
+        <div id='narrow'><a href="/"><h1>FD</h1></a></div>
+      </div>
+    </div>
+
+    <div class='Grid-cell g3of5'>
+      <!-- responsive menu list -->
+      <div id="menuList">        
+        <ul class="mobileNav"><li class="listItem"><a href="/" class="anchor">Frontpage</a></li>
+<li class="listItem active"><a href="/about/" class="anchor activeAnchor">About</a></li>
+<li class="listItem"><a href="/Data/" class="anchor">Data</a></li></ul>
+      </div>
+
+    </div>
+  
+  </div>
+</div>
+
+      <!-- breaccrumb -->
+      <div class='breadcrumbWrapper'>
+        <div class='Grid Grid--guttersLg'>
+          <div class='Grid-cell'>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- main section, full width -->
+      <div class='Grid Grid--guttersLg'>
+        <div class="Grid-cell">
+          <section id="main">
+            
+          </section>
+        </div>
+      </div>
+
+      <!-- sections, in grid -->
+      <div class="Grid Grid--guttersLg">
+
+        <!-- left -->
+        <div class="Grid-cell g3of5">
+          <section id="mainLeft">
+            
+
+  <h2>About&nbsp;</h2>
+  <p>Fermenting Data is a long-term curatorial project engaging in sensing and sense-making with data and fermentation. It is dedicated to reclaiming data as common practice rather than being assigned to statistics, machine learning, and other computational modelling methods. It is an invitation to discover and invent data processing through practice of fermentation. To ferment data is to speculate and create ways to live together as people and others who care.</p>
+  <p>mail: <a href='mailto:info@fermentingdata.net'>info[at]fermentingdata.net</a></p>
+
+
+          </section>
+        </div>
+
+        <!-- right -->
+        <div class="Grid-cell g2of5">
+          <section id="mainRight">
+            
+
+
+
+
+          </section>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- scripts -->
+  <script src='/assets/js/functions.js'></script>
+  <script>
+
+    // all is loaded
+    window.addEventListener("DOMContentLoaded", function() {
+      console.log("All is loaded");
+
+      /*
+      let burgerBtn = document.getElementById('burger');
+      burgerBtn.addEventListener('click', function() {
+        console.log("button was clicked");
+        document.getElementById('menuList').classList.toggle('hide');
+        document.getElementById('crossIcon').classList.toggle('hide');
+      });
+      */
+
+      // can i do this here?
+      linkopener(true);
+
+      // on resize
+      window.onresize = resize;
+      resize();
+
+    })
+  </script>
+</body>
+

@@ -1,0 +1,34 @@
+<div id='menuWrapper' class='unselectable'>
+
+  <div class='Grid Grid--guttersLg'>
+  
+    <div class='Grid-cell g2of5'>
+      <div id='logoWrapper'>
+        <div id='wide'>
+          <h1><a href="/">Fermenting Data</a></h1>
+        </div>
+        <div id='narrow'><a href="/"><h1>FD</h1></a></div>
+      </div>
+    </div>
+
+    <div class='Grid-cell g3of5'>
+      <!-- responsive menu list -->
+      <div id="menuList">        
+        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+          listElement: "ul",
+          listItemElement: "li",
+          listClass: "mobileNav",
+          listItemClass: "listItem",
+          listItemHasChildrenClass: "hasChildren",
+          activeListItemClass: "active",
+          anchorClass: "anchor",
+          activeAnchorClass: "activeAnchor",
+          activeKey: eleventyNavigation.key,
+          showExcerpt: false
+        }) | safe }}
+      </div>
+
+    </div>
+  
+  </div>
+</div>

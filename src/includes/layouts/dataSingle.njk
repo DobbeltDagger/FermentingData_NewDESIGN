@@ -1,0 +1,116 @@
+{% extends "base.njk" %}
+
+<!-- content in left column ---------------------------------------------- -->
+{% block leftContent %}
+
+  <!-- single resource -->
+  {{ content | safe }}
+  <p>Tags: <i>
+    {% for tag in tags %}
+      {{ tag }}{% if loop.last %}
+      {% else %},
+      {% endif %}
+    {% endfor %}
+  </i></p>
+
+{% endblock leftContent %}
+
+
+<!-- content in right column --------------------------------------------- -->
+{% block rightContent %}
+
+  <p><a href='/resources'>&uarr; Return to all resources overview</a></p>
+
+  <h2>Articles tagged with
+    <span class='noFat'><i>
+    {% for tag in tags %}
+      {{ tag }}{% if loop.last %}
+      {% else %},
+      {% endif %}
+    {% endfor %}
+    </i></span>
+  </h2>
+
+  <!-- check all tags -->
+  {% if tags %}
+    {% for tag in tags %}
+      <!-- <p>{{ tag }}</p> -->
+
+      <!-- check for resource -->
+      {% if tag == 'resource' %}
+        <h3>Resources</h3>
+        <div class='resourceWrapper'>
+          {% for rs in collections.resource %}
+            <div class='rs'>
+              <!-- <p>{{ rs.Tags }}</p> // doesnt work -->
+              <!-- <div class='img'><a href='{{ rs.url }}'><img src='{{ rs.data.thumbUrl }}'></a></div> -->
+              <div class='info'>
+                <span class='title'>{{ rs.data.title }}</span>
+                {{ rs.data.description }}
+                <span class='link'><a href="{{ rs.url }}">read more</a></span>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <!-- check for literature -->
+      {% if tag == 'literature' %}
+        <h3>Literature</h3>
+        <div class='resourceWrapper'>
+          {% for rs in collections.literature %}
+            <div class='rs'>
+              <!-- <p>{{ rs.Tags }}</p> // doesnt work -->
+              <!-- <div class='img'><a href='{{ rs.url }}'><img src='{{ rs.data.thumbUrl }}'></a></div> -->
+              <div class='info'>
+                <span class='title'>{{ rs.data.title }}</span>
+                {{ rs.data.description }}
+                <span class='link'><a href="{{ rs.url }}">read more</a></span>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <!-- check for design -->
+      {% if tag == 'design' %}
+        <h3>Design</h3>
+        <div class='resourceWrapper'>
+          {% for rs in collections.design %}
+            <div class='rs'>
+              <!-- <p>{{ rs.Tags }}</p> // doesnt work -->
+              <!-- <div class='img'><a href='{{ rs.url }}'><img src='{{ rs.data.thumbUrl }}'></a></div> -->
+              <div class='info'>
+                <span class='title'>{{ rs.data.title }}</span>
+                {{ rs.data.description }}
+                <span class='link'><a href="{{ rs.url }}">read more</a></span>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <!-- check for design -->
+      {% if tag == 'research' %}
+        <h3>Research</h3>
+        <div class='resourceWrapper'>
+          {% for rs in collections.research %}
+            <div class='rs'>
+              <!-- <p>{{ rs.Tags }}</p> // doesnt work -->
+              <!-- <div class='img'><a href='{{ rs.url }}'><img src='{{ rs.data.thumbUrl }}'></a></div> -->
+              <div class='info'>
+                <span class='title'>{{ rs.data.title }}</span>
+                {{ rs.data.description }}
+                <span class='link'><a href="{{ rs.url }}">read more</a></span>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    {% endfor %}
+  {% endif %}
+
+  <!-- <p><a href='/resources'>&uarr; Return to all resources overview</a></p> -->
+
+{% endblock rightContent %}
