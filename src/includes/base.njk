@@ -20,25 +20,25 @@
       {% include "menu.html" %}
 
       <!-- breaccrumb -->
-      <div class='breadcrumbWrapper'>
-        <div class='Grid Grid--guttersLg'>
+      <!-- <div class='breadcrumbWrapper'>
+        <div class='Grid Grid--guttersXl'>
           <div class='Grid-cell'>
-            {% block breadCrumbs %}{% endblock breadCrumbs %}
+            {# block breadCrumbs #}{# endblock breadCrumbs #}
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- main section, full width -->
-      <div class='Grid Grid--guttersLg'>
+      <div class='Grid Grid--guttersXl'>
         <div class="Grid-cell">
           <section id="main">
-            {% block mainContent %}{{ content | safe }}{% endblock mainContent %}
+            {% block mainContent %}{% endblock mainContent %}
           </section>
         </div>
       </div>
 
       <!-- sections, in grid -->
-      <div class="Grid Grid--guttersLg">
+      <div class="Grid Grid--guttersXl">
 
         <!-- left -->
         <div class="Grid-cell g3of5">
