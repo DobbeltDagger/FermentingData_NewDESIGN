@@ -8,6 +8,15 @@
   /* padding: 0 1em; /* 0 */
 }
 
+/* right to left */
+.GridReverse {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  list-style: none;
+  margin: 0;
+}
+
 .Grid-cell {
   flex: 1;
 }
@@ -70,13 +79,6 @@
 
 
 
-/* VISTIS addendum */
-.g1of3 {
-  flex: 0 0 33.3333%;
-}
-.g2of3 {
-  flex: 0 0 66.6666%;
-}
 
 
 /* *********************************************************************** */
@@ -168,6 +170,14 @@
 
 @media screen {
 
+  /* VISTIS addendum */
+  .g1of3 {
+    flex: 0 0 33.3333%;
+  }
+  .g2of3 {
+    flex: 0 0 66.6666%;
+  }
+
   .g3of5 {
     flex: 0 0 100%;
   }
@@ -175,6 +185,26 @@
     flex: 0 0 100%;
   }
 
+  /* visti menu bar */
+  .gMenuLeft {
+    flex: 0 0 100%;
+  }
+  .gMenuRight {
+    flex: 0 0 100%;
+  }
+
+}
+
+/* ************************************************************************************* */
+@media screen and (min-width: 600px) {
+
+  /* visti menu bar */
+  .gMenuLeft {
+    flex: 0 0 50%;
+  }
+  .gMenuRight {
+    flex: 0 0 50%;
+  }
 }
 
 

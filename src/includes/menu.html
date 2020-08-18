@@ -1,17 +1,8 @@
 <div id='menuWrapper' class='unselectable'>
 
-  <div class='Grid Grid--guttersLg'>
-  
-    <div class='Grid-cell g2of5'>
-      <div id='logoWrapper'>
-        <div id='wide'>
-          <h1><a href="/">Fermenting Data</a></h1>
-        </div>
-        <div id='narrow'><a href="/"><h1>FD</h1></a></div>
-      </div>
-    </div>
+  <div class='GridReverse Grid--guttersLg'>
 
-    <div class='Grid-cell g3of5'>
+    <div class='Grid-cell gMenuRight'>
       <!-- responsive menu list -->
       <div id="menuList">        
         {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
@@ -27,7 +18,15 @@
           showExcerpt: false
         }) | safe }}
       </div>
+    </div>
 
+    <div class='Grid-cell gMenuLeft'>
+      <div id='logoWrapper'>
+        <div id='wide'>
+          <h1><a href="/">Fermenting Data</a></h1>
+        </div>
+        <div id='narrow'><h1><a href="/">FD</a></h1></div>
+      </div>
     </div>
   
   </div>

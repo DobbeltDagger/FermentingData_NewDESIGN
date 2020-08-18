@@ -13,31 +13,47 @@
 
 <body>
   <div id="pageWrapper">
-    
+    <div id='stickyMenuWrapper' class='unselectable hidden'>
+
+  <div id='btnWrapper'>
+    <a id='burger'>
+      <div id='crossIcon' class='hide'>
+        <svg id='crossSvg' stroke='currentColor' fill='currentColor' stroke-width='0' viewbox='0 0 24 24' size='3rem' height='3rem' width='3rem'>
+          <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z' />
+        </svg>
+      </div>
+    </a>
+  </div>
+
+  <!-- menu -->
+  <ul class="stickyMobileNav"><li class="listItem active"><a href="/" class="anchor activeAnchor">Frontpage</a></li>
+<li class="listItem"><a href="/about/" class="anchor">About</a></li>
+<li class="listItem"><a href="/Data/" class="anchor">Data</a></li></ul>
+
+</div>
     
     <div class='insidePage'>
       
       <div id='menuWrapper' class='unselectable'>
 
-  <div class='Grid Grid--guttersLg'>
-  
-    <div class='Grid-cell g2of5'>
-      <div id='logoWrapper'>
-        <div id='wide'>
-          <h1><a href="/">Fermenting Data</a></h1>
-        </div>
-        <div id='narrow'><a href="/"><h1>FD</h1></a></div>
-      </div>
-    </div>
+  <div class='GridReverse Grid--guttersLg'>
 
-    <div class='Grid-cell g3of5'>
+    <div class='Grid-cell gMenuRight'>
       <!-- responsive menu list -->
       <div id="menuList">        
         <ul class="mobileNav"><li class="listItem active"><a href="/" class="anchor activeAnchor">Frontpage</a></li>
 <li class="listItem"><a href="/about/" class="anchor">About</a></li>
 <li class="listItem"><a href="/Data/" class="anchor">Data</a></li></ul>
       </div>
+    </div>
 
+    <div class='Grid-cell gMenuLeft'>
+      <div id='logoWrapper'>
+        <div id='wide'>
+          <h1><a href="/">Fermenting Data</a></h1>
+        </div>
+        <div id='narrow'><h1><a href="/">FD</a></h1></div>
+      </div>
     </div>
   
   </div>
@@ -58,12 +74,10 @@
           <section id="main">
             
 
-  <div class='txtCol'>
+  <div class='txtFrontIntro'>
     <!-- <h2>About Fermenting Data</h2> -->
-    <p>Fermenting Data is a long-term curatorial project engaging in sensing and sense-making with data and fermentation. It is dedicated to reclaiming data as common practice rather than being assigned to statistics, machine learning, and other computational modelling methods. It is an invitation to discover and invent data processing through practice of fermentation. To ferment data is to speculate and create ways to live together as people and others who care.</p>
-    <p>
-      <a href='/about'>Read more on the About page &rarr;</a>
-    </p>
+    <p><i>Fermenting Data</i> is a long-term curatorial project engaging in sensing and sense-making with data and fermentation. It is dedicated to reclaiming data as common practice rather than being assigned to statistics, machine learning, and other computational modelling methods. It is an invitation to discover and invent data processing through practice of fermentation. To ferment data is to speculate and create ways to live together as people and others who care.</p>
+    <!-- <p><a href='/about'>Read more on the About page &rarr;</a></p> -->
   </div>
 
 
@@ -119,9 +133,7 @@
 
   <h2>About Fermenting Data</h2>
   <p>Fermenting Data is a long-term curatorial project engaging in sensing and sense-making with data and fermentation. It is dedicated to reclaiming data as common practice rather than being assigned to statistics, machine learning, and other computational modelling methods. It is an invitation to discover and invent data processing through practice of fermentation. To ferment data is to speculate and create ways to live together as people and others who care.</p>
-  <p>
-    <a href='/about'>Read more on the About page &rarr;</a>
-  </p>
+  <!-- <p><a href='/about'>Read more on the About page &rarr;</a></p> -->
 
 
           </section>
