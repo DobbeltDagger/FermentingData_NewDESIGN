@@ -17,8 +17,6 @@ eleventyExcludeFromCollections: false
 ---
 
 
-## Corrupting Data
-
 Data is a material with which artists have been working for some time. Few years ago I curated an exhibition entitled [Corrupting Data](https://crptngdata.tumblr.com/), where I curated five different works by five different artists. I was especially interested in how artists make use of data, how they manipulate and process data, and how these different artists employ failure and error to make work with data.
 
 From glitch aesthetics in works of [Rosa Menkman](https://en.wikipedia.org/wiki/Rosa_Menkman) (NL) and [Gillian Wylde](https://www.falmouth.ac.uk/staff/gillian-wylde) (UK) to machine learning processes in works of [Mario Klingemann](https://en.wikipedia.org/wiki/Mario_Klingemann) (D), [Oliver Scott](http://cat.koept.net/) (UK) and [Sam Hains](http://samhains.com/) (AU), these different artists corrupt original data to generate aesthetic effects and create a new work with digital materials which they created themselves or found online. 

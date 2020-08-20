@@ -15,8 +15,6 @@ eleventyExcludeFromCollections: false
 ---
 
 
-## Why to Ferment Data?
-
 The invitation to ferment data is an invitation to play with data. It is an invitation to **discover** and **invent** data processing through practice of fermentation. Fermenting data is a practice of sensing and sense making and as such it is a practice of aesthetics, knowledge and sociality with each other humans and nonhumans, as makers and processors of data.  
 
 Rather than to think of data processing as belonging to statistics, and other forms of computational modelling, data fermenting **reclaims** data as **common practice** with those who become data and those who collect and process it to consider and see how care is part of this practice and how it is also a form of control.

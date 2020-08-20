@@ -162,6 +162,7 @@ h1, h2, h3, h4, h5, h6 {
   /* font-family: 'Kreon', serif; */
   font-family: 'Oswald';
   font-weight: 400;
+  /* color: #DD00DD; */ /* doesnt work, headers look like links when they are not */
   margin: 0px 0px 1rem 0px;
 }
 
@@ -232,6 +233,13 @@ a.external-link svg {
 .txtFrontIntro {
   max-width: 960px;
   margin-bottom: 2rem;
+}
+
+.date {
+  display: block;
+  margin-bottom: 0.75rem;
+  /* font-style: italic; */
+  color: rgba(0,0,0,0.5);
 }
 
 /* menu wrapper ******************************* */
@@ -673,7 +681,7 @@ a#burger #crossIcon.hide svg {
     font-size: 17px; /* 21px; /* 24px; */
   }
   #pageWrapper {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem; /* 1.5rem 1rem; */
   }
 
   .breadcrumbWrapper {

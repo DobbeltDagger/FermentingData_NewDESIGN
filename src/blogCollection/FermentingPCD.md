@@ -1,5 +1,5 @@
 ---
-title: "Introducing Fermenting Data at PCD in Aarhus "
+title: "Introducing Fermenting Data at PCD in Aarhus"
 description: "Short information about a new project"
 url: 'https://www.pcdaarhus.net/'
 urlTitle: "Processing Community Day in Aarhus"
@@ -20,8 +20,6 @@ date: 2020-02-21
 eleventyExcludeFromCollections: false
 ---
 
-
-## Introducing Fermenting Data
 
 In February I introduced Fermenting Data project during Processing Community Day which took place in DOKK1 in Aarhus. I was invited by the [code&share](https://codeandshare.net/) community to talk about this curatorial research project. 
 
