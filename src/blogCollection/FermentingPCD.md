@@ -25,7 +25,20 @@ In February I introduced Fermenting Data project during Processing Community Day
 
 I really like the title Fermenting Data because it immediately generates questions: ‘what is that?’, and ‘what does it mean?’. I have some ideas about what fermenting data could be for me, and I really like how this wild association of data and fermentation is a provocation to think about data differently. It is unusual to bring together data and fermenting because what would that look like?
 
-For me this project started as an inquiry into data to ask what data are, what are histories of data collection, storage and presentation. My curatorial practice influences what questions I ask and how I ask them and Fermenting Data is inspired by this. I am also influenced by my personal experience of fermenting that is part of so many families and cultures in Eastern Europe and beyond, and the more recent interest in fermenting across the world. 
+<div class="fullWidthHalfImage">
+  <img src="/assets/images/blog/large/p2_1.jpg" class="left">
+  <img src="/assets/images/blog/large/p2_2.jpg" class="right">
+  <div class="photoCreditNew">Foto: Winnie Soon</div>
+</div>
+
+For me this project started as an inquiry into data to ask what data are, what are histories of data collection, storage and presentation. My curatorial practice influences what questions I ask and how I ask them and Fermenting Data is inspired by this. I am also influenced by my personal experience of fermenting that is part of so many families and cultures in Eastern Europe and beyond, and the more recent interest in fermenting across the world.
+
+<div class="flexImgWrapper">
+  <img src="/assets/images/blog/large/p2_3.jpg"/>
+  <img src="/assets/images/blog/large/p2_4.jpg"/>
+  <img src="/assets/images/blog/large/p2_5.jpg"/>
+  <div class="photoCreditNew">Foto: Winnie Soon</div>
+</div>
 
 But Fermenting Data is also influenced by many recent projects which question data practices and their violence. For example, and this is by no means a full list:
 1) [Feminist Data Manifest-No](https://www.manifestno.com/) which is “a declaration of refusal and commitment. It refuses harmful data regimes and commits to new data futures.” 

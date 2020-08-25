@@ -13,7 +13,7 @@ button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: ba
 button, input { line-height: normal; *overflow: visible; }
 
 /* Basic List styling */
-ul, ol { margin: 0 0 1.5385em 0; padding: 0 0 0 1em; /* 1.25em; */ }
+/* ul, ol { margin: 0 0 1.5385em 0; padding: 0 0 0 1em;} */
 dd { margin: 0 0 0 3em; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
 li { line-height: 1.5385em; } /* 20 */
@@ -158,8 +158,6 @@ ul li {
 /* TYPE STUFF */
 
 h1, h2, h3, h4, h5, h6 {
-  /* font-family: 'franklingothic-demi', sans-serif; */
-  /* font-family: 'Kreon', serif; */
   font-family: 'Oswald';
   font-weight: 400;
   /* color: #DD00DD; */ /* doesnt work, headers look like links when they are not */
@@ -175,11 +173,15 @@ h1 {
   overflow-wrap: anywhere;
 }
 h2 {
-  /* font-family: 'Space Mono'; */
-  font-size: 1.5em; /* 1.375em; /* 1.2125em; */
-  line-height: 1.35em; /* 1.375em; /* 1.35em; */
-  letter-spacing: 0.01em; /* -0.002em; */
-  margin: 0px 0px 1rem 0px; /*  -0.25em 0px 1.25rem 0px; */
+  font-size: 1.5em;
+  line-height: 1.35em;
+  letter-spacing: 0.01em;
+  margin: 0px 0px 1rem 0px;
+}
+h2.pageCategory {
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  font-size: 1.25em;
 }
 h3 {
   font-size: 1.2125em;
@@ -224,15 +226,6 @@ a.external-link svg {
 /* hide inside img wrapper */
 .img a.external-link svg {
   display: none;
-}
-
-.txtCol {
-  max-width: 960px;
-}
-/* intro on front */
-.txtFrontIntro {
-  max-width: 960px;
-  margin-bottom: 2rem;
 }
 
 .date {
@@ -626,6 +619,20 @@ a#burger #crossIcon.hide svg {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 @media screen and (min-width: 600px) {
 
+  .blogItem {
+    flex: 0 0 50%;
+  }
+  
+  .rs {
+    flex: 0 0 33.3333%;
+  }
+
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (min-width: 800px) {
+
   #menuList { text-align: right; }
 
   #menuList ul li {
@@ -637,13 +644,6 @@ a#burger #crossIcon.hide svg {
 
   #menuList ul li a {
     padding: 0px 0.5rem;
-  }
-  .blogItem {
-    flex: 0 0 50%;
-  }
-  
-  .rs {
-    flex: 0 0 33.3333%;
   }
 
 }
@@ -657,6 +657,8 @@ a#burger #crossIcon.hide svg {
   #menuWrapper {
     margin-bottom: 3.5rem;
   }
+
+
     
   .upcoming .inside a div.Wrapper h2 {
     font-size: 2.5rem;

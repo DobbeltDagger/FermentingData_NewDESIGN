@@ -1,33 +1,57 @@
 {% extends "base.njk" %}
 
-<!-- breadcrumbs above columns -->
-{% block breadCrumbs %}
-  <p><a href='/'>&uarr; Return to front page</a></p>
-{% endblock breadCrumbs %}
+<!-- mainContent --------------------------------------------------------- -->
+{% block mainContent %}
 
+  <!-- <h2>&nbsp;</h2> -->
+  <h2 class='pageCategory'>blog</h2>
+  <div class='txtColumn'>
+
+    <div id="textInfoWrapper">
+      <div class="inside">
+        <div class="left">
+          <div class='date'>{{ page.date.toDateString() }}</div>
+        </div>
+        <div class="right">
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>{{ title }}</h2>
+    {{ content | safe }}
+    <p>Tags:
+      <i>{% for tag in tags %}{{ tag }}{% if loop.last %}{% else %}, {% endif %}{% endfor %}</i>
+    </p>
+
+  </div>
+
+{% endblock mainContent %}
 
 <!-- content in left column ---------------------------------------------- -->
 {% block leftContent %}
 
   <!-- single resource -->
-  <h2>{{ title }}</h2>
+  <!-- <h2>{{ title }}</h2>
   <div class='date'>{{ page.date.toDateString() }}</div>
   {{ content | safe }}
-  <p>Tags: <i>
-    {% for tag in tags %}
-      {{ tag }}{% if loop.last %}
-      {% else %},
-      {% endif %}
-    {% endfor %}
-  </i></p>
+  <p>Tags:
+    <i>
+      {% for tag in tags %}
+        {{ tag }}
+        {% if loop.last %}
+        {% else %}, 1
+        {% endif %}
+      {% endfor %}
+    </i>
+  </p> -->
 
 {% endblock leftContent %}
-
 
 <!-- content in right column --------------------------------------------- -->
 {% block rightContent %}
 
-  <div class="galleryWrapper">
+  <!-- <div class="galleryWrapper">
     <ul>
       {% for img in gallery %}
         <li>
@@ -35,11 +59,11 @@
             <img src='{{ img.url }}' title='{{ img.caption }}' alt='{{ img.caption }}'/>
             <div class='caption'>{{ img.caption }}</div>
           {% else %}
-            <img src='{{ img.url }}' />
+            <img src='{{ img.url }}'/>
           {% endif %}
         </li>
       {% endfor %}
     </ul>
-  </div>
+  </div> -->
 
 {% endblock rightContent %}
