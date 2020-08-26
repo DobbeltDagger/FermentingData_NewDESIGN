@@ -20,9 +20,14 @@ The invitation to ferment data is an invitation to play with data. It is an invi
 Rather than to think of data processing as belonging to statistics, and other forms of computational modelling, data fermenting **reclaims** data as **common practice** with those who become data and those who collect and process it to consider and see how care is part of this practice and how it is also a form of control.
 
 <div class="flexImgWrapper">
-  <img src="/assets/images/blog/large/p1_1.jpg"/>
-  <img src="/assets/images/blog/large/p1_2.jpg"/>
-  <div class="photoCreditNew"></div>
+  <div class='flexImgWrap'>
+    <img src="/assets/images/blog/large/p1_1.jpg"/>
+    <div class="photoCreditNew"></div>
+  </div>
+  <div class='flexImgWrap'>
+    <img src="/assets/images/blog/large/p1_2.jpg"/>
+    <div class="photoCreditNew"></div>
+  </div>
 </div>
 
 Fermentation has been used since prehistoric times as a method of food preservation to sustain families and communities throughout the seasons when access to fresh foods and necessary vitamins and nourishments was limited. Fermented drinks such as wine or beer were used in rituals in many different religions and traditions across the world. Fermentation as biological process of food preservation is a process of caring for the body and the soul and a way to know environment and its needs. Fermentation is always a process that concerns the future of the community, it is about sharing and relaying on microbes to preserve and care for health of community. It is a process that simultaneously engages care and control, and balancing act of living with others with joy and care. 
