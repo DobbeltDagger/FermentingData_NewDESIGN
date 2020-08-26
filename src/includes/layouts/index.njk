@@ -15,7 +15,7 @@
           <img src="{{ bi.data.imgUrl }}">
         </a>
         <h2>{{ bi.data.title}}</h2>
-        <p>{{ bi.data.summary }}</p>
+        <p><span class='overviewDate'>{{ bi.data.date.toDateString() }}:</span> {{ bi.data.summary }}</p>
       </div>
     {% endfor %}
   </div>

@@ -234,6 +234,11 @@ a.external-link svg {
   /* font-style: italic; */
   color: rgba(0,0,0,0.5);
 }
+/* date for front page blog overview */
+.overviewDate {
+  display: inline-block;
+  color: rgba(0,0,0,0.5);
+}
 
 /* menu wrapper ******************************* */
 #menuWrapper {
