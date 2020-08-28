@@ -21,7 +21,7 @@ Data is a material with which artists have been working for some time. Few years
 
 <div class="columnImage">
   <img src="/assets/images/blog/large/p3_1.jpg"/>
-  <div class="photoCreditNew"></div>
+  <div class="photoCreditNew">photo credit: mtc</div>
 </div>
 
 From glitch aesthetics in works of [Rosa Menkman](https://en.wikipedia.org/wiki/Rosa_Menkman) (NL) and [Gillian Wylde](https://www.falmouth.ac.uk/staff/gillian-wylde) (UK) to machine learning processes in works of [Mario Klingemann](https://en.wikipedia.org/wiki/Mario_Klingemann) (D), [Oliver Scott](http://cat.koept.net/) (UK) and [Sam Hains](http://samhains.com/) (AU), these different artists corrupt original data to generate aesthetic effects and create a new work with digital materials which they created themselves or found online.
@@ -32,7 +32,7 @@ There are other forms of corrupting data and glitch, present in Rosa Menkman’s
 
 <div class="columnImage">
   <img src="/assets/images/blog/large/p3_2.jpg"/>
-  <div class="photoCreditNew"></div>
+  <div class="photoCreditNew">Gillian Wylde <i>Will Internet Eat Brains</i> (2017)</div>
 </div>
 
 A very different kind of corruption is introduced when machine learning processes are employed in images in works of Klingemann and Hains. Klingemann creates alternative realities with deep learning which is a form of machine learning method today frequently used to create fake videos, also known as [deep fakes](https://en.wikipedia.org/wiki/Deepfake). [*Alternative Face*](https://www.youtube.com/watch?v=af_9LXhcebY) (2017) is a work where a generative adversarial neural network (GAN) got trained on biometric face markers from old music video clips by 60s French actress Francoise Hardy. The trained model gets the face markers of Kellyanne Conway’s infamous “Alternative Facts” interview during Trump’s presidential election as an input and then tries to regenerate the given scene. This is a very different kind of data manipulation which has become notorious because of its malicious use on social media.
@@ -42,11 +42,11 @@ These different ways in which artist use data processing in their art illustrate
 <div class="fullWidthHalfImage">
   <div class='imgWrap left'>
     <img src="/assets/images/blog/large/p3_3.jpg">
-    <div class="photoCreditNew"></div>
+    <div class="photoCreditNew">Mario Klingeman <i>Alternative Face</i> (2017)</div>
   </div>
   <div class='imgWrap right'>
     <img src="/assets/images/blog/large/p3_4.jpg">
-    <div class="photoCreditNew"></div>
+    <div class="photoCreditNew">photo credit: mtc</div>
   </div>
 </div>
 
