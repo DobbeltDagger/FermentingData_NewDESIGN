@@ -34,7 +34,7 @@ Fermentation has been used since prehistoric times as a method of food preservat
 
 <div class="columnImage">
   <img src="/assets/images/blog/large/p1_3.jpg"/>
-  <div class="photoCreditNew"></div>
+  <div class="photoCreditNew">photo credit: mtc</div>
 </div>
 
 Fermenting Data is a way to think, make, work, grow and play with microbes and vegetables and utensils and other things and people with whom fermenting is done. It is a process that drives what tools are used and what tools are invented to facilitate this process. It is a way to record and figure what and how can be done as data fermentation. It is also a way to intervene into data collecting and processing as driven by what can be learned from fermenting and data when they are part of the common practice shared by community. 
