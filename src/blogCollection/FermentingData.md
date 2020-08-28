@@ -22,11 +22,11 @@ Rather than to think of data processing as belonging to statistics, and other fo
 <div class="flexImgWrapper">
   <div class='flexImgWrap'>
     <img src="/assets/images/blog/large/p1_1.jpg"/>
-    <div class="photoCreditNew"></div>
+    <div class="photoCreditNew">photo credit: mtc</div>
   </div>
   <div class='flexImgWrap'>
     <img src="/assets/images/blog/large/p1_2.jpg"/>
-    <div class="photoCreditNew"></div>
+    <div class="photoCreditNew">photo credit: mtc</div>
   </div>
 </div>
 
