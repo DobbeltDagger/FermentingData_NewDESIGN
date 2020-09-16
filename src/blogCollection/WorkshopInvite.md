@@ -3,11 +3,7 @@ title: "Invitation to Ferment Data [3 workshops in Aarhus]"
 description: "Workshop Invitation"
 thumbUrl: '/assets/images/blog/blogDefaultThumb.jpg'
 imgUrl: '/assets/images/blog/large/workshop_invite.png'
-summary: '[Workshop 1] Fermenting Data: collecting and chopping  
-26 September  12.00 – 17.00 Andromeda   
-Gudrunsvej 78,  
-8220 Brabrand.
- Fermenting Data is a programme of three workshops that follows fermenting process. '
+summary: 'Fermenting Data is a programme of three workshops that follow fermenting process. During the workshops we ferment seasonal veggies from Sigrids Garden in Gellerup, and explore data practices.'
 gallery:
   - { caption: "", url: "/assets/images/blog/large/w_1.png" }
   - { caption: "", url: "/assets/images/blog/large/w_2.png" }
@@ -37,7 +33,7 @@ Sigrid Stue
 
 Do you use Instagram or Facebook or other social media platforms? Are you automatically pressing “accept” when a “cookie” box shows up in your browser? Data are extracted and given away, but rarely it is possible for us to trace who uses this data, how and for what ends.
 
-Fermenting Data is a three part workshop where we ferment seasonal veggies from Sigrids Garden in Gellerup, and explore data practices. While preparing our ferments we will talk about and think with the complex and important world of data. You might already know about torshi, kimchee, sauerkraut or the simple pickled cucumbers. How about you join us for fermenting with vegetables and data, and sign up for a tasty, local and healthy 3 part workshop to experience how the micro universe of fermentation can help us think about data and their influence on our daily lives!
+Fermenting Data is a three-part workshop where we ferment seasonal veggies from Sigrids Garden in Gellerup, and explore data practices. While preparing our ferments we will talk about and think with the complex and important world of data. You might already know about torshi, kimchee, sauerkraut or the simple pickled cucumbers. How about you join us for fermenting with vegetables and data, and sign up for a tasty, local and healthy series of workshops to experience how the micro universe of fermentation can help us think about data and their influence on our daily lives!
 
 To register for the workshop send an email to <a href='mailto:info@fermentingdata.net'>info[at]fermentingdata.net</a> with 'Fermenting Data workshops' in the title of the message.
 
@@ -46,12 +42,12 @@ To register for the workshop send an email to <a href='mailto:info@fermentingdat
   <div class="photoCreditNew">photo credit: mtc</div>
 </div>
 
-Fermenting Data workshop invites you to explore fermentation* and digitization* together. Working with microbes, vegetables, minerals, jars, sensors and other technologies, we will experiment with these two processing techniques to play and discover how fermenting can infuse data and how data can become part of fermentation. 
+Fermenting Data invites you to explore fermentation* and digitization* together. Working with microbes, vegetables, minerals, jars, sensors and other technologies, we will experiment with these two processing techniques to play and discover how fermenting can infuse data and how data can become part of fermentation. 
 
 We will produce ferments of different kinds, so bring your cabbages, carrots and other vegetables as they will be our companions in fermenting. Bring cameras, audio recorders and other sensing devices to start process of collecting your data.
 
 You might then ask, why do it? What is this fermenting data about?   
-Our answers: we want to ferment data because we are curious and because we don’t know what fermenting data could be! There are so many potentialities and we want to include as many of them as there are us fermenting data! Join us in this discovery and have some fun together as we discover and invent fermenting data practices.  
+Our answers: we want to ferment data because we are curious and because we don’t know what fermenting data could be! There are so many ways to ferment data that need to be discovered still. We want to include as many of them as there are us fermenting data! Join us in this adventure and have some fun together as we invent fermenting data practices.  
 
 /* Fermentation is an ancient technique of preserving food that has been used in many cultures for hundreds of years. More scientific definition describes it as a metabolic process during which microorganism or enzyms change composition of complex organic compounds into simple ones such as sugar into alcohol C2 H6 O or carbo dioxide CO2.  
 /* Digitization is the process of conversion of analogue data into digital format.  
