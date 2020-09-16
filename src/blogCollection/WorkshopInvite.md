@@ -1,5 +1,5 @@
 ---
-title: "Invitation to Ferment Data [workshop 1]"
+title: "Invitation to Ferment Data [3 workshops in Aarhus]"
 description: "Workshop Invitation"
 thumbUrl: '/assets/images/blog/blogDefaultThumb.jpg'
 imgUrl: '/assets/images/blog/large/workshop_invite.png'
@@ -18,10 +18,21 @@ tags:
 date: 2020-09-16
 eleventyExcludeFromCollections: false
 ---
-[Workshop 1] **Fermenting Data: collecting and chopping**
-26 September  12.00 – 17.00 Andromeda 
+[Workshop 1] **Fermenting Data: collecting and chopping**  
+26 September 12.00 – 17.00  
+Andromeda 
 Gudrunsvej 78,
 8220 Brabrand
+
+[Workshop 2] **Fermenting Data: categorising taste and colour** 
+7 October 17.00 – 19.00  
+code&share  
+Høegh Guldbergs Gade 65B, 
+8000C Aarhus 
+
+[Workshop 3] **Fermenting Data: sharing food sharing data**   
+31 October 12.00 – 17.00    
+Sigrid Stue   
 
 Do you use Instagram or Facebook or other social media platforms? Are you automatically pressing “accept” when a “cookie” box shows up in your browser? Data are extracted and given away, but rarely it is possible for us to trace who uses this data, how and for what ends.
 
@@ -36,9 +47,9 @@ Fermenting Data workshop invites you to explore fermentation* and digitization* 
 
 We will produce ferments of different kinds, so bring your cabbages, carrots and other vegetables as they will be our companions in fermenting. Bring cameras, audio recorders and other sensing devices to start process of collecting your data. 
 
-* Fermentation is an ancient technique of preserving food that has been used in many cultures for hundreds of years. More scientific definition describes it as a metabolic process during which microorganism or enzyms change composition of complex organic compounds into simple ones such as sugar into alcohol C2 H6 O or carbo dioxide CO2.  
-* Digitization is the process of conversion of analogue data into digital format.
-* Data is a formal representation of relations and things that exist in the world. Data is necessary for computers to carry out calculations.
+/* Fermentation is an ancient technique of preserving food that has been used in many cultures for hundreds of years. More scientific definition describes it as a metabolic process during which microorganism or enzyms change composition of complex organic compounds into simple ones such as sugar into alcohol C2 H6 O or carbo dioxide CO2.  
+/* Digitization is the process of conversion of analogue data into digital format.  
+/* Data is a formal representation of relations and things that exist in the world. Data is necessary for computers to carry out calculations.
 
 <div class="columnImage">
   <img src="/assets/images/blog/large/w_1.png"/>
