@@ -65,7 +65,7 @@ Our answers: You probably heard about digitisation, digitalization, digital tran
 During the workshop we will agitate data processing to explore and re-process data while chopping cabbages and massaging them with salt before they are carefully left to effervescence. And as we do it we will ask what metabolism of data looks like, what kind of energy is released, and how unrest is part of data fermentations revealing the entangled nature of data that while being captured engages practices of deep observation and sensing that take time and take over bodies. 
 Fermenting Data is a series of workshops that takes cultural and natural processes as guiding principle and combines data and fermentation to explore datafication together with microbes, vegetables, minerals and jars. And with each other. 
 
-The workshops are supported by Humans and IT research programme and <a href="https://darc.au.dk/">Digital Aesthetics Research Center</a> at Aarhus University. 
+The workshops are supported by Humans and IT research programme at Aarhus University. 
 
 <div class="fullWidthHalfImage">
   <div class='imgWrap left'>
