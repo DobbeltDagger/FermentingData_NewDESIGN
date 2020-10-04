@@ -13,6 +13,7 @@
   margin: 0px auto 1.5rem auto;
 }
 
+
 /*
 .txtColumn ol,
 .txtColumn ul {}
@@ -170,24 +171,27 @@
     left: 0px; /* auto; /* 1.5em; /* 0px; */
     display: block;
     float: left;
-    width: 50%; /* 20%; */
+    width: 100%; /* 50%; /* 20%; */
     z-index: 0;
     padding-top: 0.5em;
     padding-right: 1em;
     padding-left: 0px; /* 0.75em; */
   }
   #textInfoWrapper .inside .right {
-    position: relative; /* absolute; */
+    /*
+    position: relative;
     top: 0px;
-    right: 0px; /* 1.5em; /* 0px; */
+    right: 0px; 
     display: block;
     float: left;
-    width: 50%; /* 20%; */
+    width: 100%;
     z-index: 0;
     text-align: left;
     padding-top: 0.5em;
     padding-left: 1em;
     padding-right: 0.75em;
+    */
+    display: none;
   }
   #textInfoWrapper .inside .right .pdfLink {
     display: none;
@@ -203,6 +207,9 @@
     max-width: 100%; /* 54%; /* 60%;*/
     margin: 0px 0px 1.5em 0px; /* 0px 23% 1.5em 23%; /* 0px 20% 1.5em 20%; */
   }
+  .txtColumn h2 {
+    font-size: 2.25em;
+  }  
   /* image variations */
   .txtColumn .leftImage {
     max-width: 100%; /* 77%; /* 80%; */
@@ -327,6 +334,9 @@
     max-width: 54%; /* 60%;*/
     margin: 0px 23% 1.5em 23%; /* 0px 20% 1.5em 20%; */
   }
+  .txtColumn h2 {
+    font-size: 2.25em;
+  }  
   /* image variations */
   .txtColumn .leftImage {
     max-width: 77%;

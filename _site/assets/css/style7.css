@@ -233,6 +233,7 @@ a.external-link svg {
   margin-bottom: 0.75rem;
   /* font-style: italic; */
   color: rgba(0,0,0,0.5);
+  padding: 0.35em 0px 0px 0px;
 }
 /* date for front page blog overview */
 .overviewDate {
