@@ -1,0 +1,37 @@
+{% extends "base.njk" %}
+
+<!-- mainContent --------------------------------------------------------- -->
+{% block mainContent %}
+
+  <!-- <h2>&nbsp;</h2> -->
+  <h2 class='pageCategory'>glossary</h2>
+  <div class='txtColumn'>
+
+    <div id="textInfoWrapper">
+      <div class="inside">
+        <div class="left">
+          <div class='date'>{{ page.date.toDateString() }}</div>
+        </div>
+        <div class="right">
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>{{ title }}</h2>
+    {{ content | safe }}
+    <p>Tags:
+      <i>{% for tag in tags %}{{ tag }}{% if loop.last %}{% else %}, {% endif %}{% endfor %}</i>
+    </p>
+
+  </div>
+
+{% endblock mainContent %}
+
+<!-- content in left column ---------------------------------------------- -->
+{% block leftContent %}
+{% endblock leftContent %}
+
+<!-- content in right column --------------------------------------------- -->
+{% block rightContent %}
+{% endblock rightContent %}

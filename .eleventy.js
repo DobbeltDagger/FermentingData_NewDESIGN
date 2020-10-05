@@ -11,11 +11,18 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("commissions", function(collection) {
     return collection.getFilteredByTag("commission");
   });
-
   // workshops
   eleventyConfig.addCollection("workshops", function(collection) {
     return collection.getFilteredByTag("workshop");
   });
+  // bibliography
+  eleventyConfig.addCollection("bibliography", function(collection) {
+    return collection.getFilteredByTag("bibliography");
+  });
+  // glossary
+  eleventyConfig.addCollection("glossary", function(collection) {
+    return collection.getFilteredByTag("glossary");
+  });    
 
   return {
     passthroughFileCopy: true,

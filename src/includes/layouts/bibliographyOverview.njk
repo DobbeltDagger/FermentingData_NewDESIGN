@@ -1,0 +1,32 @@
+{% extends "base.njk" %}
+
+<!-- content in left column ---------------------------------------------- -->
+{% block leftContent %}
+
+
+  <h2 class='pageCategory'>Bibliography</h2>
+  <!-- <p>To be updated ...</p> -->
+
+  <div class='bibWrapper'>
+    {% for rs in collections.bibliography %}
+      <div class='bib'>
+        <div class='info'>
+          <span class='title'>{{ rs.data.title }}</span>
+          author: {{ rs.data.author }}<br/>
+          summary: {{ rs.data.summary }}
+          <span class='link'><a href="{{ rs.url }}">read more</a></span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock leftContent %}
+
+
+<!-- content in right column --------------------------------------------- -->
+{% block rightContent %}
+
+  <!-- <h2>About bibliography</h2>
+  <p>Introduction to bibliography. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac massa justo. Donec nec vulputate nisi, ac ultricies nulla. Donec iaculis vestibulum risus id egestas. Integer ipsum felis, aliquet in neque in, mollis vestibulum dolor.</p> -->
+
+{% endblock rightContent %}
