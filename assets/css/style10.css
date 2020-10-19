@@ -87,9 +87,6 @@ body {
   width: 100%;
   background: #FCFCFC;
   color: #110044;
-  /* font-family: 'Rubik', sans-serif; /* franklingothic-book', sans-serif; */
-  /* font-family: 'Source Sans Pro', sans-serif; */
-  /* font-family: 'Fira Sans', sans-serif; */
   font-family: 'Space Mono'; /* Space Mono COULD WORK */
   font-size: 16px; /* 24px; */
   line-height: 1.5em;
@@ -627,7 +624,7 @@ a#burger #crossIcon.hide svg {
     float: left;
     margin: 0px; /*  0px 0px 0.35rem 0px; */
     padding: 0px;
-    line-height: normal;
+    line-height: 1.25rem; /* normal; */
   }
 
   #menuList ul li a {
@@ -643,8 +640,6 @@ a#burger #crossIcon.hide svg {
   .rs {
     flex: 0 0 50%;
   }
-
-
   
   #stickyMenuList {
     text-align: right;
@@ -664,7 +659,6 @@ a#burger #crossIcon.hide svg {
     display: none;
   }
   
-
   .rightHeader {
     text-align: left;
   }
@@ -711,6 +705,7 @@ a#burger #crossIcon.hide svg {
 
 }
 
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* 1024 */
@@ -720,8 +715,6 @@ a#burger #crossIcon.hide svg {
   #menuWrapper {
     margin-bottom: 3.5rem;
   }
-
-
     
   .upcoming .inside a div.Wrapper h2 {
     font-size: 2.5rem;
@@ -746,7 +739,7 @@ a#burger #crossIcon.hide svg {
     font-size: 17px; /* 21px; /* 24px; */
   }
   #pageWrapper {
-    padding: 2rem 1rem; /* 1.5rem 1rem; */
+    padding: 2.5rem 1rem; /* 1.5rem 1rem; */
   }
 
   .breadcrumbWrapper {
