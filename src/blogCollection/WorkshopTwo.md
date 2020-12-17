@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: false
 ---
 
 
-[Workshop 1] **Fermenting Data: categorising taste and colour**  
+[Workshop 2] **Fermenting Data: categorising taste and colour**  
 7 October 17.00 – 19.00  
 code&share
 Høegh Guldbergs Gade 65B, 8000C Aarhus
