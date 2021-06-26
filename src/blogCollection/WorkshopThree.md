@@ -67,9 +67,7 @@ This raises a number of questions:
 2) do we need terms and conditions?
 3) who is trusted and what is entrusted in this process of donating data to the server?
 4) what is left unquestioned? 
-5) does everyone feel ok about this current situation? 
-
-These questions will be discussed on the fermentingdata mailinglist. 
+5) do we feel ok about this current situation? 
 
 <div class="columnImage">
   <img src="/assets/images/blog/large/mozilla.png"/>

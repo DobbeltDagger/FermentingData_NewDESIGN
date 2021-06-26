@@ -1,4 +1,6 @@
 ## Fermenting Data
+<p>start server:<br/>
+_npm start</p>
 
 <p>Pull code from repo:<br/>
 _ git pull origin master</p>
