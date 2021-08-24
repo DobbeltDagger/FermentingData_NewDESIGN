@@ -4,6 +4,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addFilter("includes", require("./_filters/11ty_contains.js"));
   eleventyConfig.addPassthroughCopy("assets");
 
   // Get only content that matches a tag - https://www.11ty.dev/docs/collections/ (bottom half of page)
@@ -22,7 +23,12 @@ module.exports = function(eleventyConfig) {
   // glossary
   eleventyConfig.addCollection("glossary", function(collection) {
     return collection.getFilteredByTag("glossary");
+  });
+  // glossary
+  eleventyConfig.addCollection("tagList", function(collection) {
+    return collection.getFilteredByTag("tagList");
   });    
+
 
   return {
     passthroughFileCopy: true,

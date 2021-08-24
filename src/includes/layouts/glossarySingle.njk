@@ -1,37 +1,76 @@
 {% extends "base.njk" %}
 
-<!-- mainContent --------------------------------------------------------- -->
+<!-- content in main column ******************************************* -->
 {% block mainContent %}
 
-  <!-- <h2>&nbsp;</h2> -->
-  <h2 class='pageCategory'>glossary</h2>
-  <div class='txtColumn'>
+  <!-- setting up index card -->
+  <div class='indexCardWrapper'>
+    <div id='indexCard'>
 
-    <div id="textInfoWrapper">
-      <div class="inside">
-        <div class="left">
-          <div class='date'>{{ page.date.toDateString() }}</div>
+      <!-- bg img for card -->
+      <img src='/assets/images/cardBg_1000x705.png' class='bgImg'/>
+
+      <!-- footer -->
+      <div class='cardHeader'>
+        <div class='cardHeaderLeft'>
+          <span class='lines'>Fermenting</span>
+          <span class='lines'>Data</span>
+          <span class='lines'>Aarhus</span>
+          <span class='lift'><span class='lines'>More info here</span></span>
         </div>
-        <div class="right">
-          <p>&nbsp;</p>
+        <div class='cardHeaderRight'>
+          <span class='lines'>17/09/21&mdash;16/10/2021</span>
         </div>
       </div>
+      
+      <!-- main content in the center of card -->
+      <div class='mainContentWrapper'>
+        
+        <div class='mainHeader'>
+          <h2>{{title}}</h2>
+        </div>
+
+        <div class='mainColumn'>
+          {{ content | safe }}
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class='cardFooter'>
+        <!-- <div class='cardFooterLeft'><a href='#'>#fermenting</a>&nbsp;&nbsp;<a href='#'>#data</a></div> -->
+
+        <!-- https://stackoverflow.com/questions/66261187/11ty-how-to-display-post-tags-in-my-post-njk-file -->
+        <div class='cardFooterLeft'>
+          {% set comma = joiner() %}
+          {% for tag in tags -%}
+            {% if tag !== 'glossary' %}
+              <a href='/taxonomy/{{ tag }}'>#{{ tag }}</a>&nbsp;
+            {% endif %}
+          {%- endfor %}
+          &nbsp;
+        </div>
+
+        <div class='cardFooterRight'><a href='#'>https://fermentingdata.net/glossary</a></div>
+
+        <!-- <div class='cardFooterLeft'><span class='lines'>#fermenting</span> <span class='lines'>#data</span></div>
+        <div class='cardFooterRight'><a href='/glossary'>https://fermentingdata.net/glossary</a></div> -->
+      </div>
+
     </div>
-
-    <h2>{{ title }}</h2>
-    {{ content | safe }}
-    <p>Tags:
-      <i>{% for tag in tags %}{{ tag }}{% if loop.last %}{% else %}, {% endif %}{% endfor %}</i>
-    </p>
-
   </div>
 
 {% endblock mainContent %}
 
+
 <!-- content in left column ---------------------------------------------- -->
 {% block leftContent %}
+
+
 {% endblock leftContent %}
+
 
 <!-- content in right column --------------------------------------------- -->
 {% block rightContent %}
+
+
 {% endblock rightContent %}

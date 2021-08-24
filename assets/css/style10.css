@@ -373,6 +373,107 @@ a.external-link svg {
 }
 
 
+/* Resource Wrapper *************************** */
+
+.dataWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+.dt {
+  margin-bottom: 1em;
+  padding: 0 0.5rem 1rem 0.5rem;
+  overflow: hidden;
+}
+/* remove ext link styling */
+.dt .img a.external-link:after { display: none; }
+.dt .img a.external-link { padding: 0px; }
+
+.dt .img a {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.dt .img a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+}
+.dt .img a .imgTxt {
+  width: 100%;
+  height: auto; /* 100%; */
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  /* border: 1px solid red; */
+  text-align: center;
+  font-family: "ARK-L";
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: var(--text-color);
+  padding: 2rem;
+  word-break: break-word; /* break-all; */
+}
+.dt .info {
+  font-size: 0.85em;
+  line-height: 1.275em;
+}
+.dt .info .link {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.dt .info .link a {
+  word-break: break-all;
+}
+.dt .info .title {
+  display: block;
+  float: left;
+  width: 100%;
+  font-weight: 700;
+  padding-bottom: 0.1em;
+  letter-spacing: 0.035em;
+}
+
+
+
+/* **************************************************************** */
+
+.glossaryWrapper {
+  font-family: "ARK-L";
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  color: var(--text-color);
+}
+
+.glossaryWrapper .spacer {
+  padding: 0px 0.9rem 0px 1.85rem;
+  display: inline;
+  opacity: 0.5;
+}
+
+.glossaryWrapper a {
+  /* border: 1px solid pink; */
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid transparent;
+}
+
+.glossaryWrapper a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #DD00DD;
+}
+
+
+
+/* **************************************************************** */
 /* bibliography */
 
 .bibWrapper {
@@ -640,6 +741,9 @@ a#burger #crossIcon.hide svg {
   .rs {
     flex: 0 0 50%;
   }
+  .dt {
+    flex: 0 0 50%;
+  }
   
   #stickyMenuList {
     text-align: right;
@@ -683,6 +787,9 @@ a#burger #crossIcon.hide svg {
   .rs {
     flex: 0 0 33.3333%;
   }
+  .dt {
+    flex: 0 0 33.3333%;
+  }
 
 }
 
@@ -724,6 +831,9 @@ a#burger #crossIcon.hide svg {
   }
   
   .rs {
+    flex: 0 0 25%;
+  }
+  .dt {
     flex: 0 0 25%;
   }
 
@@ -770,7 +880,9 @@ a#burger #crossIcon.hide svg {
   .rs {
     flex: 0 0 33.3333%;
   }
-
+  .dt {
+    flex: 0 0 33.3333%;
+  }
 }
 
 

@@ -1,17 +1,77 @@
 {% extends "base.njk" %}
 
+<!-- content in main column ---------------------------------------------- -->
+{% block mainContent %}
+
+  <!-- setting up index card -->
+  <div class='indexCardWrapper'>
+    <div id='indexCard'>
+
+      <!-- bg img for card -->
+      <img src='/assets/images/cardBg_1000x705.png' class='bgImg'/>
+
+      <!-- footer -->
+      <div class='cardHeader'>
+        <div class='cardHeaderLeft'>
+          <span class='lines'>Fermenting</span>
+          <span class='lines'>Data</span>
+          <span class='lines'>Aarhus</span>
+          <span class='lift'><span class='lines'>More info here</span></span>
+        </div>
+        <div class='cardHeaderRight'>
+          <span class='lines'>17/09/21&mdash;16/10/2021</span>
+        </div>
+      </div>
+      
+      <!-- main content in the center of card -->
+      <div class='mainContentWrapper'>
+        
+        <div class='mainHeader'>
+          <h2>{{title}}</h2>
+        </div>
+
+        <div class='mainColumn'>
+          <p>is a project by Aarhus based artist Anders Visti. AaUOS is an instrument that documents the audiosphere of Aarhus to produce new musical compositions of and for the city. For <a href=''>Fermenting</a> <a href=''>Data</a> the instrument includes data related to western part of the city, specifically Gellerup-parken and Toveshøj that have been labelled as ghettos by successive Danish governments since 2010. Development plans in these areas focus on the physical restructuring of neighbourhoods, supported by data collected from a series of similar regeneration projects in other European cities. These data are seen to provide evidence that the demolition of housing in certain city districts - and its subsequent social effects - are desirable because they reclaim these areas as “safe” for residents of the city.</p>
+          <p>AaUOS compiles sound recordings from Gellerup and Toveshøj with the city development data to map these areas from within. Rather than creating the architectural and somewhat utopian view that represents the district after the transition, the artist uses neural networks to register and perform with data how the area with its current inhabitants are affected by these major regeneration plans and works.</p>
+        </div>
+
+        <div class='LRcolWrapper'>
+          <div class='leftColumn'>
+          </div>
+
+          <div class='rightColumn'>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class='cardFooter'>
+        <!-- <div class='cardFooterLeft'><a href='#'>#fermenting</a>&nbsp;&nbsp;<a href='#'>#data</a></div> -->
+        
+        <!-- https://stackoverflow.com/questions/66261187/11ty-how-to-display-post-tags-in-my-post-njk-file -->
+        <div class='cardFooterLeft'>
+          {% set comma = joiner() %}
+          {% for tag in tags -%}
+            {% if tag !== 'posts' %}
+              <a href='#'>#{{ tag }}</a>&nbsp;
+            {% endif %}
+          {%- endfor %}
+        </div>
+        <div class='cardFooterRight'><a href='#'>https://fermentingdata.net/glossary</a></div>
+
+        <!-- <div class='cardFooterLeft'><span class='lines'>#fermenting</span> <span class='lines'>#data</span></div>
+        <div class='cardFooterRight'><a href='/glossary'>https://fermentingdata.net/glossary</a></div> -->
+      </div>
+
+    </div>
+  </div>
+
+{% endblock mainContent %}
+
+
 <!-- content in left column ---------------------------------------------- -->
 {% block leftContent %}
 
-  <!-- single resource -->
-  {{ content | safe }}
-  <p>Tags: <i>
-    {% for tag in tags %}
-      {{ tag }}{% if loop.last %}
-      {% else %},
-      {% endif %}
-    {% endfor %}
-  </i></p>
 
 {% endblock leftContent %}
 
@@ -19,7 +79,7 @@
 <!-- content in right column --------------------------------------------- -->
 {% block rightContent %}
 
-  <p><a href='/resources'>&uarr; Return to all resources overview</a></p>
+  <!-- <p><a href='/resources'>&uarr; Return to all resources overview</a></p>
 
   <h2>Articles tagged with
     <span class='noFat'><i>
@@ -31,19 +91,13 @@
     </i></span>
   </h2>
 
-  <!-- check all tags -->
   {% if tags %}
     {% for tag in tags %}
-      <!-- <p>{{ tag }}</p> -->
-
-      <!-- check for resource -->
       {% if tag == 'resource' %}
         <h3>Resources</h3>
         <div class='resourceWrapper'>
           {% for rs in collections.resource %}
             <div class='rs'>
-              <!-- <p>{{ rs.Tags }}</p> // doesnt work -->
-              <!-- <div class='img'><a href='{{ rs.url }}'><img src='{{ rs.data.thumbUrl }}'></a></div> -->
               <div class='info'>
                 <span class='title'>{{ rs.data.title }}</span>
                 {{ rs.data.description }}
@@ -54,14 +108,11 @@
         </div>
       {% endif %}
 
-      <!-- check for literature -->
       {% if tag == 'literature' %}
         <h3>Literature</h3>
         <div class='resourceWrapper'>
           {% for rs in collections.literature %}
             <div class='rs'>
-              <!-- <p>{{ rs.Tags }}</p> // doesnt work -->
-              <!-- <div class='img'><a href='{{ rs.url }}'><img src='{{ rs.data.thumbUrl }}'></a></div> -->
               <div class='info'>
                 <span class='title'>{{ rs.data.title }}</span>
                 {{ rs.data.description }}
@@ -72,14 +123,11 @@
         </div>
       {% endif %}
 
-      <!-- check for design -->
       {% if tag == 'design' %}
         <h3>Design</h3>
         <div class='resourceWrapper'>
           {% for rs in collections.design %}
             <div class='rs'>
-              <!-- <p>{{ rs.Tags }}</p> // doesnt work -->
-              <!-- <div class='img'><a href='{{ rs.url }}'><img src='{{ rs.data.thumbUrl }}'></a></div> -->
               <div class='info'>
                 <span class='title'>{{ rs.data.title }}</span>
                 {{ rs.data.description }}
@@ -90,14 +138,11 @@
         </div>
       {% endif %}
 
-      <!-- check for design -->
       {% if tag == 'research' %}
         <h3>Research</h3>
         <div class='resourceWrapper'>
           {% for rs in collections.research %}
             <div class='rs'>
-              <!-- <p>{{ rs.Tags }}</p> // doesnt work -->
-              <!-- <div class='img'><a href='{{ rs.url }}'><img src='{{ rs.data.thumbUrl }}'></a></div> -->
               <div class='info'>
                 <span class='title'>{{ rs.data.title }}</span>
                 {{ rs.data.description }}
@@ -110,6 +155,7 @@
 
     {% endfor %}
   {% endif %}
+  -->
 
   <!-- <p><a href='/resources'>&uarr; Return to all resources overview</a></p> -->
 

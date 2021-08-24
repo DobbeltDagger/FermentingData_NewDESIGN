@@ -2,7 +2,7 @@
 title: "Fermenting Data: categorising taste and colour"
 description: "Ferementing Data"
 thumbUrl: '/assets/images/blog/blogDefaultThumb.jpg'
-imgUrl: '/assets/images/blog/large/wk2_0.jpeg'
+imgUrl: '/assets/images/blog/large/wk2_0.jpg'
 summary: ' We collected sensations and recorded them on index cards. To categorise is to give a name by arranging relations, which also involve making connections that are linked to the subject.'
 gallery:
   - { caption: "", url: "/assets/images/blog/large/wk2.jpg" }
@@ -30,7 +30,6 @@ What is data if not a measuring technique? In function similar to language, whos
   <img src="/assets/images/blog/large/wk2.jpg"/>
   <div class="photoCreditNew"></div>
 </div>
-
 
 COLOURS samples
 ---> red with a hint of peach

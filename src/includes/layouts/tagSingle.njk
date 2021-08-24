@@ -1,0 +1,33 @@
+{% extends "base.njk" %}
+
+<!-- content in main column ******************************************* -->
+{% block mainContent %}
+
+  <h2>Glossary items tagged with <i>{{ title }}</i></h2>
+
+  {% for item in collections.tagList -%}
+    <a href='/glossaryCollection/{{item.data.title}}'>{{ item.data.title }}</a>&nbsp;
+  {%- endfor %}
+
+  <p> is this wokring below? tag: {{title}}</p>
+  {% for item in collections.glossary %}
+    {{ item.data.title }}
+  {%- endfor %}
+
+
+
+{% endblock mainContent %}
+
+
+<!-- content in left column ******************************************* -->
+{% block leftContent %}
+
+
+{% endblock leftContent %}
+
+
+<!-- content in right column ******************************************* -->
+{% block rightContent %}
+
+
+{% endblock rightContent %}

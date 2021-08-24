@@ -1,33 +1,49 @@
 {% extends "base.njk" %}
 
-<!-- content in left column ---------------------------------------------- -->
-{% block leftContent %}
 
+{% block mainContent %}
 
+  <!-- all resources ********************************************** -->
+  <!-- https://docs.google.com/document/d/1EkIXySj5b6PbVdCU_cVgfY6WruB9msqUvHL3jljyVeE/edit -->
+  
   <h2 class='pageCategory'>Glossary</h2>
-  <p>To be updated ...</p>
 
-  <!--
-  <div class='resourceWrapper'>
-    {% for rs in collections.glossary %}
-      <div class='rs'>
-        <div class='img'><a href='{{ rs.url }}'><img src='{{ rs.data.thumbUrl }}'></a></div>
-        <div class='info'>
-          <span class='title'>{{ rs.data.title }}</span>
-          {{ rs.data.description }}
-          <span class='link'><a href="{{ rs.url }}">read more</a></span>
-        </div>
-      </div>
+  <div class='glossaryWrapper'>
+    {% for dt in collections.glossary %}
+      <a href='{{ dt.url }}'>{{ dt.data.title }}</a><span class='spacer'>*</span>
     {% endfor %}
-  </div> -->
+  </div>
+
+  <!-- 
+  <div class='glossaryWrapper'>
+    {% for dt in collections.glossary %}
+        <div class='dt'>
+          <div class='img'>
+            <a href='{{ dt.url }}'>
+              <img src='{{ dt.data.thumbUrl }}'>
+              <div class='imgTxt'>{{ dt.data.title }}</div>
+            </a>
+          </div>
+          <div class='info'>
+            <span class='title'>{{ dt.data.title }}</span>
+            {{ dt.data.description }}
+            <span class='link'><a href="{{ dt.url }}">read more</a></span>
+          </div>
+        </div>
+    {% endfor %}
+  </div>
+  -->
+
+{% endblock mainContent %}
+
+
+<!-- content in left column ********************************************** -->
+{% block leftContent %}
 
 {% endblock leftContent %}
 
 
-<!-- content in right column --------------------------------------------- -->
+<!-- content in right column ********************************************** -->
 {% block rightContent %}
-
-  <!-- <h2>About bibliography</h2>
-  <p>Introduction to bibliography. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac massa justo. Donec nec vulputate nisi, ac ultricies nulla. Donec iaculis vestibulum risus id egestas. Integer ipsum felis, aliquet in neque in, mollis vestibulum dolor.</p> -->
 
 {% endblock rightContent %}
