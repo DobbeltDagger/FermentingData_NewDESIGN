@@ -6,6 +6,7 @@
   <!-- all resources ************************************************ -->
   <h2 class='pageCategory'>Data</h2>
 
+  <!-- 
   <div class='dataWrapper'>
     {% for dt in collections.data %}
       <div class='dt'>
@@ -18,6 +19,7 @@
       </div>
     {% endfor %}
   </div>
+  -->
 
 {% endblock mainContent %}
 
@@ -26,39 +28,10 @@
 <!-- content in left column ************************************************ -->
 {% block leftContent %}
 
-  <!-- 
-  <div class='resourceWrapper'>
-    {% for rs in collections.commissions %}
-      <div class='rs'>
-        <div class='img'><a href='{{ rs.url }}'><img src='{{ rs.data.thumbUrl }}'></a></div>
-        <div class='info'>
-          <span class='title'>{{ rs.data.title }}</span>
-          {{ rs.data.description }}
-          <span class='link'><a href="{{ rs.url }}">read more</a></span>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-  -->
-
-  <!--
-  the parent category "data" holds these child categories: 
-  _ lab results (raw data sets that we produced)
-  _ repository
-  __ literature
-  __ articles
-  __ design
-  __ fermenting
-  _ curatorial (things related to curatorial research)
-  -->
-
 {% endblock leftContent %}
 
 
 <!-- content in right column ************************************************ -->
 {% block rightContent %}
-  
-  <!-- <h2>About Data</h2>
-  <p>This text introduces the child categories of</p> -->
 
 {% endblock rightContent %}

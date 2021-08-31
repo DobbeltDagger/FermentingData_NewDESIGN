@@ -5,8 +5,14 @@ function linkopener(a) {
   const hostName = window.location.hostname; // window.location.href;
   var b = a ? "_blank" : "_self";
   var c = document.links;
+  console.log("document.links:", c);
   for (var i = 0; i < c.length; i++) {
-    if (c[i].href.search(hostName) == -1) {
+    console.log("c[i]:", c[i]);
+    const isMenu = c[i].classList.contains('anchor');
+    if (isMenu) {
+      console.log("ITS A MENU ITEM!")
+    }
+    else if (c[i].href.search(hostName) == -1) {
       c[i].addEventListener("click", function () {
         this.target = b;
       });

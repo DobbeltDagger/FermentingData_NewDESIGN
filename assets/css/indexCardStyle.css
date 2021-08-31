@@ -40,6 +40,7 @@ img.bgImg {
   border-bottom: 2px solid var(--gray-color);
   line-height: 1.8em;
   color: var(--gray-color);
+  font-family: "NotCourierSansB";
 }
 
 /* ***************************************************** */
@@ -131,6 +132,17 @@ img.bgImg {
 #indexCard .mainColumn {
   width: 100%;
   margin-bottom: 1rem;
+  font-family: "NotCourierSans";
+}
+.indexCardWrapper .mainColumn b,
+.indexCardWrapper .mainColumn strong {
+  font-family: "NotCourierSansB";
+}
+
+.jarCode {
+  word-break: break-all !important;
+  font-size: 19px;
+  line-height: 24px;
 }
 
 #indexCard .LRcolWrapper {

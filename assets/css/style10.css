@@ -42,7 +42,7 @@ sub { bottom: -0.25em }
 } 
 
 ::-webkit-scrollbar {
-  width: 0.5em; /* 0.35em; */
+  width: 0.65em; /* 0.35em; */
   background-color: #FCFCFC; /* whitesmoke; /* transparent; */
 }
 ::-webkit-scrollbar-thumb {
@@ -67,6 +67,109 @@ sub { bottom: -0.25em }
   background-repeat: none;
   background-size: cover;
   opacity: 0.5;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FRONT IFRAME WRAPPER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#splashWrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  /* background-image: url(../images/fdExhibition/frontbg.png); */
+  background-image: url(../images/fdExhibition/frontBg.gif);
+  background-position: center;
+  background-repeat: repeat;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.splashInside {
+  max-width: 1280px;
+  padding: 1rem 1.5rem;
+}
+
+#splashWrapper h1,
+#splashWrapper h2 {
+  color: white;
+}
+#splashWrapper h1 {
+  font-family: 'ARK-L';
+  font-size: 6.25rem;
+  text-shadow: -0.45rem -0.45rem 0px black,
+                1px 1px 0px white;
+  margin-bottom: 0.75rem;
+}
+#splashWrapper h2 {
+  font-family: 'ARK-S';
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  text-shadow: -0.2rem -0.2rem 0px black;
+  margin-bottom: 3rem;
+}
+
+#splashWrapper p {
+  color: white;
+  font-family: "NotCourierSansB";
+  font-size: 1.5rem;
+  line-height: 1.2em;
+  text-shadow: -2px -2px 0px black;
+}
+
+
+ul.splashNav {
+  color: white;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+ul.splashNav li {
+  display: inline-block;
+}
+
+ul.splashNav li a {
+  color: pink;
+  font-family: "NotCourierSansB";
+  font-size: 1.5rem;
+  line-height: 1.2em;
+  text-shadow: -2px -2px 0px black;
+  padding: 0rem 0.5rem 0.25rem;
+  background-color: rgba(0,0,0,0.25);
+  border-radius: 0.5rem;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* FRONT IFRAME WRAPPER +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#frontIframeWrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: transparent; /* orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#frontIframeWrapper iframe {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  width: calc(100vw - 4rem);
+  height: calc(100vh - 4rem);
+  border: 5px solid black;
 }
 
 
@@ -685,6 +788,22 @@ a#burger #crossIcon.hide svg {
     padding: 0.65rem;
   }
 
+  #splashWrapper {
+    background-position: top center;
+    justify-content: flex-start;
+  }
+  #splashWrapper h1 {
+    text-align: left; /* center; */
+  }
+  #splashWrapper h2 {
+    text-align: left; /* center; */
+    margin-bottom: 1rem;
+  }
+  #splashWrapper p {
+    text-align: left; /* center; */
+  }
+
+
   /* h2 header */
   .upcoming .inside a div.Wrapper h2 {
     font-size: 1.75rem; /* 2.75rem; */
@@ -810,6 +929,22 @@ a#burger #crossIcon.hide svg {
     padding: 0px 0.5rem;
   }
 
+  #splashWrapper {
+    background-position: center center;
+    justify-content: center; /* flex-start; */
+  }
+  #splashWrapper h1 {
+    text-align: center;
+  }
+  #splashWrapper h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #splashWrapper p {
+    text-align: center;
+  }
+
+
 }
 
 
@@ -907,6 +1042,32 @@ a#burger #crossIcon.hide svg {
 /* *********************************************************************************** */
 /* *********************************************************************************** */
 /* FONTS */
+
+/* ***************************************************** */
+/* ***************************************************** */
+/* font faces */
+
+@font-face {
+  font-family: "ARK-L";
+  src: url('../fonts/ARK-ES-DenseLight.otf') format('otf'),
+       url('../fonts/ARK-ES-DenseLight.woff') format('woff');
+}
+@font-face {
+  font-family: "ARK-S";
+  src: url('../fonts/ARK-ES-SolidRegular.otf') format('otf'),
+       url('../fonts/ARK-ES-SolidRegular.woff') format('woff');;
+}
+@font-face {
+  font-family: "NotCourierSans";
+  src: url('../fonts/NotCourierSans.otf') format('otf'),
+       url('../fonts/NotCourierSans-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: "NotCourierSansB";
+  src: url('../fonts/NotCourierSans-Bold.otf') format('otf'),
+       url('../fonts/NotCourierSans-Bold-webfont.woff') format('woff');
+}
+
 
 
 /* space-mono-regular - latin */

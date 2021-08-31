@@ -2,6 +2,7 @@
 title: "Fermenting jar"
 description: "This is a dataset description"
 thumbUrl: '/assets/images/data/dataDefaultThumb.jpg'
+backContent: ''
 date: 2004-01-01
 tags:
   - glossary
@@ -12,6 +13,6 @@ tags:
 ---
 
 
-n. 	a location and a site of life-sustaining chemical reactions that generate energy. A container of trans-formation where one form of matter is transformed into another.
+n.&nbsp;&nbsp;&nbsp;a location and a site of life-sustaining chemical reactions that generate energy. A container of trans-formation where one form of matter is transformed into another.
 
-n. 	a mini ecosystem powered by microbes, minerals and plant matter. Micro and macro bodies in relations.
+n.&nbsp;&nbsp;&nbsp;a mini ecosystem powered by microbes, minerals and plant matter. Micro and macro bodies in relations.

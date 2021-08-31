@@ -1,11 +1,56 @@
-{% extends "base.njk" %}
+{% extends "baseFront.njk" %}
 
+<!-- main content ********************************************** -->
 {% block mainContent %}
-  <!-- 
-  <div class='txtFrontIntro'>
-    <p><i>Fermenting Data</i> is a long-term curatorial project engaging in sensing and sense-making with data and fermentation. It is dedicated to reclaiming data as common practice rather than being assigned to statistics, machine learning, and other computational modelling methods. It is an invitation to discover and invent data processing through practice of fermentation. To ferment data is to speculate and create ways to live together as people and others who care.</p>
+
+  <!-- <div id='frontIframeWrapper'>
+    <iframe src='https://www.wikipedia.org/'></iframe>
+  </div> -->
+
+  <div id='splashWrapper'>
+    <div class='splashInside'>
+      <div class='Grid Grid--guttersXl'>
+        <div class="Grid-cell g1of1">  
+          <h1>Fermenting Data:<br/>Aarhus 8000-8220</h1>
+          <h2>city-wide data exhibition<br/>
+          17/09&ndash;16/10/2021</h2>
+        </div>
+      </div>
+
+      <div class='Grid Grid--guttersXl'>
+        <div class="Grid-cell">
+          <p>Jægergårdsgade 164a, DK-8000 + Andromeda8220, Gudrunsvej 78, DK-8220 - &amp; across locations in the city map on fermentingdata.net<p>
+          <p>In collaboration with ‡ DobbeltDagger. Exhibition &amp; Events program here</p>
+
+          <p>
+            {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+              listElement: "ul",
+              listItemElement: "li",
+              listClass: "splashNav",
+              listItemClass: "listItem",
+              listItemHasChildrenClass: "hasChildren",
+              activeListItemClass: "active",
+              anchorClass: "anchor",
+              activeAnchorClass: "activeAnchor",
+              activeKey: eleventyNavigation.key,
+              showExcerpt: false
+            }) | safe }}
+          </p>
+        </div>
+      </div>
+
+      <!--
+      <div class='Grid Grid--guttersXl'>
+        <div class="Grid-cell g1of2">
+          <p>Jægergårdsgade 164a, DK-8000 + Andromeda8220, Gudrunsvej 78, DK-8220 - &amp; across locations in the city map on fermentingdata.net<p>
+        </div>
+        <div class="Grid-cell g1of2">
+          <p>In collaboration with DobbeltDagger. Exhibition &amp; Events program here</p>
+        </div>
+      </div>
+      -->
+    </div>
   </div>
-  -->
 
   <h2 class='pageCategory'>Blog</h2>
   <div class='blogWrapper'>
@@ -22,32 +67,20 @@
 
 {% endblock mainContent %}
 
-<!-- content in left column ---------------------------------------------- -->
+<!-- content in left column ********************************************** -->
 {% block leftContent %}
 
-  <!-- 
-  <h2>Blog/News</h2>
-  <div class='blogWrapper'>
-    {% for bi in collections.blog | reverse %}
-      <div class='blogItem'>
-        <a href="{{ bi.url }}" title='{{ bi.data.title }}' alt='{{ bi.data.title }}'>
-          <img src="{{ bi.data.imgUrl }}">
-        </a>
-        <h2>{{ bi.data.title}}</h2>
-        <p>{{ bi.data.summary }}</p>
-      </div>
-    {% endfor %}
-  </div>
-  -->
 
 {% endblock leftContent %}
 
-<!-- content in right column --------------------------------------------- -->
+<!-- content in right column ********************************************** -->
 {% block rightContent %}
 
-  <!--
-  <h2>About Fermenting Data</h2>
-  <p>Fermenting Data is a long-term curatorial project engaging in sensing and sense-making with data and fermentation. It is dedicated to reclaiming data as common practice rather than being assigned to statistics, machine learning, and other computational modelling methods. It is an invitation to discover and invent data processing through practice of fermentation. To ferment data is to speculate and create ways to live together as people and others who care.</p>
-  -->
 
 {% endblock rightContent %}
+
+
+
+
+
+

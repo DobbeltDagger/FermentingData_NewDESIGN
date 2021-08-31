@@ -5,15 +5,25 @@
 
   <h2>Glossary items tagged with <i>{{ title }}</i></h2>
 
-  {% for item in collections.tagList -%}
-    <a href='/glossaryCollection/{{item.data.title}}'>{{ item.data.title }}</a>&nbsp;
-  {%- endfor %}
+  <!-- go over items -->
+  <div class='glossaryWrapper'>
+    {% for item in collections.glossary %}
 
-  <p> is this wokring below? tag: {{title}}</p>
-  {% for item in collections.glossary %}
-    {{ item.data.title }}
-  {%- endfor %}
+      <!-- run through tags, see if one matches -->
+      {% for t in item.data.tags %}
+        {% if t == title %}
+          <a href='{{ item.url }}'>{{ item.data.title }}</a><span class='spacer'>*</span>
+        {% endif %}
+      {%- endfor %}
 
+    {%- endfor %}
+  <div>
+
+  <!-- 
+  {% for item in collections.glossary | includes(title, 'true') %}
+    <a href='{{ item.url }}'>{{ item.data.title }}</a><span class='spacer'>*</span>
+  {%- endfor %}
+  -->
 
 
 {% endblock mainContent %}

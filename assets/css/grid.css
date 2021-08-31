@@ -173,6 +173,9 @@
 @media screen {
 
   /* VISTIS addendum */
+  .g1of2 {
+    flex: 0 0 100%;
+  }
   .g1of3 {
     flex: 0 0 33.3333%;
   }
@@ -199,6 +202,11 @@
 
 /* ************************************************************************************* */
 @media screen and (min-width: 800px) {
+
+  .g1of2 {
+    flex: 0 0 50%;
+  }
+
 
   /* visti menu bar */
   .gMenuLeft {

@@ -1,0 +1,31 @@
+{% extends "base.njk" %}
+
+<!-- main content ********************************************** -->
+{% block mainContent %}
+
+  <h2 class='pageCategory'>Blog</h2>
+  <div class='blogWrapper'>
+    {% for bi in collections.blog | reverse %}
+      <div class='blogItem'>
+        <a href="{{ bi.url }}" title='{{ bi.data.title }}' alt='{{ bi.data.title }}'>
+          <img src="{{ bi.data.imgUrl }}">
+        </a>
+        <h2>{{ bi.data.title}}</h2>
+        <p><span class='overviewDate'>{{ bi.data.date.toDateString() }}:</span> {{ bi.data.summary }}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock mainContent %}
+
+<!-- content in left column ********************************************** -->
+{% block leftContent %}
+
+
+{% endblock leftContent %}
+
+<!-- content in right column ********************************************** -->
+{% block rightContent %}
+
+
+{% endblock rightContent %}
