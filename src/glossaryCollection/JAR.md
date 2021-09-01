@@ -8,7 +8,7 @@ tags:
   - glossary
 ---
 
-<p><b>JAR</b> java archive repository</p>
+<p><b>JAR</b> java archive repository. This JAR contains digital bodies of code and data. Here follows the source code:</p>
 <!-- this jar contains digital bodies of code and data.
 Here follows the code -->
 

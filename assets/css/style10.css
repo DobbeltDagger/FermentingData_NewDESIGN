@@ -122,13 +122,13 @@ sub { bottom: -0.25em }
   text-shadow: -2px -2px 0px black;
 }
 
-
 ul.splashNav {
+  display: block;
+  width: 100%;
   color: white;
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 2rem 0px 0px 0px;
 }
 
 ul.splashNav li {
@@ -141,9 +141,9 @@ ul.splashNav li a {
   font-size: 1.5rem;
   line-height: 1.2em;
   text-shadow: -2px -2px 0px black;
-  padding: 0rem 0.5rem 0.25rem;
+  padding: 0rem 0.65rem 0.25rem;
   background-color: rgba(0,0,0,0.25);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 
@@ -747,26 +747,6 @@ a#burger #crossIcon.hide svg {
 }
 
 
-/* Content */
-/*
-.date {
-  color: #BB0088;
-}
-.ws .date {
-  color: tomato;
-}
-.ws a {
-  color: blue;
-  text-decoration: none;
-}
-#mapSource {
-  width: 100%;
-  height: 40vw;
-  min-height: 300px;
-  margin-bottom: 0px;
-}
-*/
-
 
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -801,6 +781,9 @@ a#burger #crossIcon.hide svg {
   }
   #splashWrapper p {
     text-align: left; /* center; */
+  }
+  .splashNav {
+    text-align: left;
   }
 
 
@@ -943,6 +926,9 @@ a#burger #crossIcon.hide svg {
   #splashWrapper p {
     text-align: center;
   }
+  .splashNav {
+    text-align: center;
+  }  
 
 
 }

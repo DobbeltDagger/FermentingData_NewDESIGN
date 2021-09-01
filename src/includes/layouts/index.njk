@@ -19,8 +19,8 @@
 
       <div class='Grid Grid--guttersXl'>
         <div class="Grid-cell">
-          <p>Jægergårdsgade 164a, DK-8000 + Andromeda8220, Gudrunsvej 78, DK-8220 - &amp; across locations in the city map on fermentingdata.net<p>
-          <p>In collaboration with ‡ DobbeltDagger. Exhibition &amp; Events program here</p>
+          <p>Jægergårdsgade 164a, DK-8000 + Andromeda8220, Gudrunsvej 78, DK-8220<br/>&amp; across locations in the city map on fermentingdata.net<p>
+          <p>In collaboration with ‡ DobbeltDagger. Exhibition &amp; Events program <a href='https://google.com'>here</a></p>
 
           <p>
             {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
@@ -52,18 +52,6 @@
     </div>
   </div>
 
-  <h2 class='pageCategory'>Blog</h2>
-  <div class='blogWrapper'>
-    {% for bi in collections.blog | reverse %}
-      <div class='blogItem'>
-        <a href="{{ bi.url }}" title='{{ bi.data.title }}' alt='{{ bi.data.title }}'>
-          <img src="{{ bi.data.imgUrl }}">
-        </a>
-        <h2>{{ bi.data.title}}</h2>
-        <p><span class='overviewDate'>{{ bi.data.date.toDateString() }}:</span> {{ bi.data.summary }}</p>
-      </div>
-    {% endfor %}
-  </div>
 
 {% endblock mainContent %}
 
