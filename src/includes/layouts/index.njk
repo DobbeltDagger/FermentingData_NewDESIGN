@@ -3,10 +3,21 @@
 <!-- main content ********************************************** -->
 {% block mainContent %}
 
-  <!-- <div id='frontIframeWrapper'>
-    <iframe src='https://www.wikipedia.org/'></iframe>
-  </div> -->
+  <!-- blog overview -->
+  <h2 class='pageCategory'>Blog</h2>
+  <div class='blogWrapper'>
+    {% for bi in collections.blog | reverse %}
+      <div class='blogItem'>
+        <a href="{{ bi.url }}" title='{{ bi.data.title }}' alt='{{ bi.data.title }}'>
+          <img src="{{ bi.data.imgUrl }}">
+        </a>
+        <h2>{{ bi.data.title}}</h2>
+        <p><span class='overviewDate'>{{ bi.data.date.toDateString() }}:</span> {{ bi.data.summary }}</p>
+      </div>
+    {% endfor %}
+  </div>
 
+  <!--
   <div id='splashWrapper'>
     <div class='splashInside'>
       <div class='Grid Grid--guttersXl'>
@@ -38,19 +49,8 @@
           </p>
         </div>
       </div>
-
-      <!--
-      <div class='Grid Grid--guttersXl'>
-        <div class="Grid-cell g1of2">
-          <p>Jægergårdsgade 164a, DK-8000 + Andromeda8220, Gudrunsvej 78, DK-8220 - &amp; across locations in the city map on fermentingdata.net<p>
-        </div>
-        <div class="Grid-cell g1of2">
-          <p>In collaboration with DobbeltDagger. Exhibition &amp; Events program here</p>
-        </div>
-      </div>
-      -->
     </div>
-  </div>
+  </div> -->
 
 
 {% endblock mainContent %}
