@@ -79,7 +79,7 @@ For the Fermenting Data project, AaUOS looks at the western part of the city, sp
 
 AaUOS compiles sound recordings from Gellerup and Toveshøj to map these areas from within, and to find other ways, beyond the bureaucratic and oppressive, of working and performing with data.
 
-Anders Visti is a Danish visual artist working with code. Founder and co-editor of the publishing house * [asterisk] from 2002-12. Founder and editor of the printed web publication ‡ DobbeltDagger and initiator of !=null, a public forum for artists, researchers, developers and hackers using contemporary technology for creative expression and aesthetic inquiry. Currently he is teaching basic coding skills and foundational computing at Funen Art Academy and Jutland Art Academy in Denmark. Together with Magda Tyzlik-Carver, he is co-curator of Fermenting Data exhibition project. [andersvisti.dk](https://andersvisti.dk/) 
+Anders Visti Artist working with code. Founder and co-editor of the publishing house * [asterisk] from 2002-12. Founder and editor of the printed web publication ‡ DobbeltDagger and initiator of Code&Share[ ] and !=null, two public forums for artists, researchers, developers and hackers using contemporary technology for creative expression and aesthetic inquiry [andersvisti.dk](https://andersvisti.dk/) 
 
 <div class="columnImage">
   <img src="/assets/images/blog/large/FD_symp.png"/>
