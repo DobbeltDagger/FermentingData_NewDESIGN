@@ -1,7 +1,7 @@
 const deployConf = {
   user: "fermentingdata.net", // "andersvisti.dk", // "user",
   // Password optional, prompted if none given
-  password: "pH5fzwDb9AGk", // "Epx21Itk84",
+  password: "CollectingAndChopping2022", // "Epx21Itk84",
   host: "linux327.unoeuro.com", // "linux163.unoeuro.com",
   port: 21,
   localRoot: "", // This is set in eleventy.js conf file // __dirname + "/local-folder",

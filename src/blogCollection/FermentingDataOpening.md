@@ -28,6 +28,17 @@ The exhibition Fermenting Data Aarhus 8000-8220 opened on the 17 September until
 
 The curatorial invitation for the artists started as a question about ‘What would fermented data look like?’ The artists Sissel Marie Tonn, and Anders Visti respond by offering works in which different kinds of data are processed with methods such as photogrammetry, sonifications, 3D renderings, storytelling, singing, digital recordings, processing with machine learning and automated poetry among others.   
 
+<div class="fullWidthHalfImage">
+  <div class='imgWrap left'>
+    <img src="/assets/images/blog/large/SphagnumT1.jpg">
+    <div class="photoCreditNew">Sphagnum Time (installation view)</div>
+  </div>
+  <div class='imgWrap right'>
+    <img src="/assets/images/blog/large/SphagnumT2.png">
+    <div class="photoCreditNew">Sphagnum Time (installation view)</div>
+  </div>
+</div>
+
 In her work Sphagnum Time, Sissel Marie Tonn creates photogrammetric readings of three bog bodies from the museum in Drents (NL). While the bodies are turned into data, scientific and artistic methods are brought together into a beautifully told story of three bog bodies that have never been found. The three faces talk to us from three different screens and as they speak they also sing, murmur and hum of their life as bodies ‘living’ in the bog and how the conditions of the bog have changed in the time they have been in it.   
 
 Installed in the container in the part of the city that is also undergoing unprecedented changes of redevelopment, Sphagnum Time encourages a speculation of what the future might be for us as bodies that are measured and modelled by the conditions of climate change and relentless datafication practices. Sphagnum Time is a narrative of change and mutations, that reveals the complexities of the contemporary world by inviting ancient bodies to tell their story.  
