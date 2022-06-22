@@ -1,0 +1,230 @@
+* {box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+
+@font-face {
+  font-family: "ARK-L";
+  src: url("assets/fonts/ARK-ES-DenseLight.otf");
+}
+@font-face {
+  font-family: "ARK-S";
+  src: url("assets/fonts/ARK-ES-SolidRegular.otf");
+}
+@font-face {
+  font-family: "NotCourierSans";
+  src: url("assets/fonts/NotCourierSans.otf");
+  font-weight: regular;
+}
+@font-face {
+  font-family: "NotCourierSans";
+  src: url("assets/fonts/NotCourierSans-Bold.otf");
+  font-weight: bold;
+}
+
+
+body { 
+	font-family: "NotCourierSans";
+	background: rgb(232 200 183 / 45%);
+	background: linear-gradient(180deg, #afd7b085 0%, rgb(232 200 183 / 45%) 52%, rgb(183 178 111 / 28%) 100%);
+	color: #0000ff;
+	font-size: 1.2rem;
+    line-height: 1.6rem;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Text styling */
+
+.nav-buttons {
+  font-family: "ARK-L";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 2rem 4vw;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-column-gap: 2rem;
+}
+
+.nav-buttons a,
+a:visited {
+  text-decoration: none;
+  width: -moz-fit-content;
+  border: 0.2rem solid #0000ff;
+  border-radius: 2rem;
+  padding: 0.4rem 1.2rem;
+}
+.nav-buttons a.pink {
+  background-color: #F557FF;
+  color: #0000ff;
+  border: 0.2rem solid #F557FF;
+}
+.nav-buttons a.green {
+  background-color: #98FB98;
+  color: #0000ff;
+  border: 0.2rem solid #98FB98;
+}
+
+.nav-buttons a:hover {
+  font-family: "ARK-S";
+  background-color: inherit;
+  color: #0000ff;
+}
+
+.main {
+	margin-top: 30vh;
+	margin-left: 4vw;
+	margin-right: 40vw;
+	margin-bottom: 1em;
+}
+
+	.pageheading {
+		margin-right: -20vw;
+		font-family: "ARK-S";
+		letter-spacing: 0.1em;
+		padding-bottom: 1em;
+		font-size: 2.5rem;
+		line-height: 3rem;
+		}
+
+	.pageheading-light {
+		font-family: "ARK-L";
+	}
+
+	.introtext p {
+		padding-bottom: 1.6em;
+	}
+
+	.subheading {
+		font-family: "ARK-S";
+	}
+
+	.bold {
+		font-weight: bold;
+	}
+
+
+	.introtext p a:link, a:visited {
+		color: #0000ff; 
+		text-decoration: none; 
+		border-bottom: 1px solid #0000ff;
+		}
+
+	.introtext p a:hover {
+		color: #F557FF; 
+		text-decoration: none; 
+		border-bottom: 1px solid #F557FF;
+	}
+
+
+	.colophon {
+		margin-top: 10em;
+		border-top: 1px solid #0000ff;
+	}
+
+	.colophon p{
+		padding-top: 0.8em;
+		font-size: 0.9em;
+	}
+
+	.colophon p a:link, a:visited {
+		color: #0000ff; 
+		text-decoration: none; 
+		}
+
+	.colophon p a:hover {
+		color: #F557FF; 
+		text-decoration: none; 
+	}
+
+
+/* End of text styling */
+
+
+/* Preview images */
+
+.image-preview {
+	position: fixed;
+	display: block;
+	right: 2vw;
+	z-index: -1000;
+}
+
+	.landscape {
+		width: 46vw;
+	}
+
+	.portrait {
+		width: 34vw;
+	}
+
+	.top {
+	    top: 2vw;
+	}
+
+	.middle-top {
+	    top: 20vh;
+	}
+
+	.middle-bottom {
+	    top: 40vh;
+	}
+
+	.bottom {
+	    bottom: 10vh;
+	}
+
+	img {
+		width: 100%;
+	}
+
+/* End of preview images */
+
+
+/* Media queries */
+
+@media only screen and (min-width: 1682px) {
+	body { 
+		font-size: 1.4em;
+		line-height: 1.8em;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	body { 
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+	.main {
+		margin-top: 30vh;
+		margin-right: 44vw;
+	}
+	.landscape {
+		width: 40vw;
+	}
+
+	.portrait {
+		width: 30vw;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	body { 
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+
+	.main {
+		margin-top: 30vh;
+		margin-right: 4vw;
+		margin-bottom: 1em;
+	}
+
+	.colophon p{
+		font-size: 0.7em;
+		line-height: 1em;
+
+	}
+
+}
