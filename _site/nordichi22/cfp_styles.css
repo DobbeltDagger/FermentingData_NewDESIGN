@@ -3,22 +3,23 @@
 	padding: 0;
 	}
 
+
 @font-face {
   font-family: "ARK-L";
-  src: url("assets/fonts/ARK-ES-DenseLight.otf");
+  src: url("https://fermentingdata.net/assets/fonts/ARK-ES-DenseLight.otf");
 }
 @font-face {
   font-family: "ARK-S";
-  src: url("assets/fonts/ARK-ES-SolidRegular.otf");
+  src: url("https://fermentingdata.net/assets/fonts/ARK-ES-SolidRegular.otf");
 }
 @font-face {
   font-family: "NotCourierSans";
-  src: url("assets/fonts/NotCourierSans.otf");
+  src: url("https://fermentingdata.net/assets/fonts/NotCourierSans-webfont.woff");
   font-weight: regular;
 }
 @font-face {
   font-family: "NotCourierSans";
-  src: url("assets/fonts/NotCourierSans-Bold.otf");
+  src: url("https://fermentingdata.net/assets/fonts/NotCourierSans-Bold.otf");
   font-weight: bold;
 }
 
