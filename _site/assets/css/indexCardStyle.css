@@ -1,0 +1,384 @@
+
+:root {
+  --text-color: #222233;
+  --gray-color: rgba(0,0,0,0.5);
+  --card-bg-color: rgba(255, 255, 232, 0.3);
+}
+
+/* ***************************************************** */
+.indexCardWrapper {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto; /* 100vh; */
+  font-size: 21px; /* 1.2em; */
+  line-height: 1.35em;
+  padding: 0px;
+  font-family: "NotCourierSansB";
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.125);
+  overflow: hidden;
+}
+
+/* bg img decided card ratio */
+img.bgImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+}
+
+#indexCard {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  background-color: var(--card-bg-color);
+}
+
+.lines {
+  display: inline-block;
+  border-bottom: 2px solid var(--gray-color);
+  line-height: 1.8em;
+  color: var(--gray-color);
+  font-family: "NotCourierSansB";
+}
+
+/* ***************************************************** */
+/* header */
+#indexCard .cardHeader {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 2.5rem 2rem 0px 2rem;
+  /* font-family: "NotCourierSans"; */
+  font-size: 0.8em;
+  color: var(--gray-color);
+}
+
+#indexCard .cardHeader a {
+  display: inline-block;
+  border-bottom: 2px solid var(--gray-color);
+  line-height: 1.8em;
+  color: var(--gray-color);
+}
+#indexCard .cardHeader a:hover {
+  text-decoration: none;
+}
+
+#indexCard .cardHeader .cardHeaderLeft {
+  display: block;
+  float: left;
+  /* width: 60%; */
+}
+#indexCard .cardHeader .cardHeaderLeft .lift {
+  display: inline-block;
+  padding-bottom: 1rem; /* 20px; */
+  margin-top: -1rem; /* -20px; */
+  margin-left: 1rem;
+  vertical-align: bottom;
+}
+
+#indexCard .cardHeader .cardHeaderRight {
+  display: block;
+  float: left;
+  /* width: 40%;
+  text-align: right; */
+}
+
+/* ***************************************************** */
+/* main content in center */
+#indexCard .mainContentWrapper {
+  position: absolute;
+  top: 7rem;
+  left: 7rem;
+  text-align: left; /* center; */
+  width: calc(100% - 14rem);
+  height: calc(100% - 14rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#indexCard .mainContentWrapper a {
+  display: inline-block;
+  border-bottom: 2px solid var(--text-color);
+  font-size: 0.8em;
+  padding-bottom: 0.1rem;
+  /* margin-top: -0.5rem; */
+  margin-bottom: 0.1rem;
+  vertical-align: bottom;
+  color: var(--text-color);
+}
+#indexCard .mainContentWrapper a:hover {
+  text-decoration: none;
+}
+
+/* last paragraphs does not have margin in bottom */
+#indexCard .mainContentWrapper p:last-of-type {
+  margin-bottom: 0px;
+} 
+
+#indexCard .mainHeader h2 {
+  font-family: "ARK-S";
+  font-size: 2.75rem;
+  margin-bottom: 1.35rem;
+  text-align: center;
+}
+
+#indexCard .mainColumn {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-family: "NotCourierSans";
+}
+.indexCardWrapper .mainColumn b,
+.indexCardWrapper .mainColumn strong {
+  font-family: "NotCourierSansB";
+}
+
+.jarCode {
+  word-break: break-all !important;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+#indexCard .LRcolWrapper {
+  display: block;
+  width: 100%;
+}
+#indexCard .LRcolWrapper::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+#indexCard .leftColumn {
+  width: 50%;
+  display: block;
+  float: left;
+  padding: 0px;
+  padding-right: 0.75rem;
+  text-align: left;
+}
+
+#indexCard .rightColumn {
+  width: 50%;
+  display: block;
+  float: left;
+  padding: 0px;
+  padding-left: 0.75rem;
+  text-align: left;
+}
+
+
+/* ***************************************************** */
+/* Footer */
+
+#indexCard .cardFooter {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 0px 2rem 2.5rem 2rem;
+  /* font-family: "NotCourierSans"; */
+  font-size: 0.8em;
+}
+
+#indexCard .cardFooter .cardFooterLeft {
+  display: block;
+  float: left;
+  /* width: 60%; */
+}
+
+#indexCard .cardFooter .cardFooterRight {
+  display: block;
+  float: left;
+  /* width: 40%;
+  text-align: right; */
+}
+
+/* links in footer */
+#indexCard .cardFooter a {
+  display: inline-block;
+  border-bottom: 2px solid var(--gray-color);
+  line-height: 1.8em;
+  color: var(--gray-color);
+}
+#indexCard .cardFooter a:hover {
+  text-decoration: none;
+}
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* THERE ARE STYLESHEETS ATTACHED TO THIS formatting */
+
+/* grids */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen {
+
+  #indexCard .mainContentWrapper {
+    position: relative; /* absolute; */
+    top: auto; /* 0px; /* 7rem; */
+    left: auto; /* 1rem; */
+    width: 100%; /* calc(100% - 14rem); */
+    padding: 0rem 2rem 1rem 2rem;
+  }
+
+  #indexCard .bgImg {
+    display: none;
+  }
+
+  #indexCard .cardHeader {
+    display: block;
+    float: left;
+    position: relative; /* absolute; */
+    left: auto; /* 0px; */
+    bottom: auto; /* 0px; */
+    width: 100%;
+    padding: 1.5rem 2rem 2.5rem 2rem;
+  }
+
+  #indexCard .cardHeader .cardHeaderLeft {
+    width: 100%;
+  }
+  #indexCard .cardHeader .cardHeaderLeft .lift {
+    display: inline-block;
+    padding-bottom: 0px; /* 1rem; /* 20px; */
+    margin-top: 0px; /* -1rem; /* -20px; */
+    margin-left: 0px; /* 1rem; */
+    vertical-align: bottom;
+  }
+  
+  #indexCard .cardHeader .cardHeaderRight {
+    width: 100%; /* 40%; */
+    text-align: left; /* right; */
+  }  
+
+  #indexCard .cardFooter {
+    position: relative; /* absolute; */
+    left: auto; /* 0px; */
+    bottom: auto; /* 0px; */
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0px 2rem 2.5rem 2rem;
+  }
+
+  #indexCard .cardFooter .cardFooterLeft {
+    width: 100%;
+  }
+  
+  #indexCard .cardFooter .cardFooterRight {
+    width: 100%;
+    text-align: left;
+  }
+
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (min-width: 1024px) {
+
+
+  #indexCard .mainContentWrapper {
+    position: absolute;
+    top: 7rem;
+    left: 7rem;
+    text-align: left; /* center; */
+    width: calc(100% - 14rem);
+    height: calc(100% - 14rem);
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #indexCard .bgImg {
+    display: block;
+  }  
+
+  #indexCard .cardHeader {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    float: none;
+    padding: 2.5rem 2rem 0px 2rem;
+  }
+
+  #indexCard .cardHeader .cardHeaderLeft {
+    width: 60%;
+  }
+  #indexCard .cardHeader .cardHeaderLeft .lift {
+    display: inline-block;
+    padding-bottom: 1rem; /* 20px; */
+    margin-top: -1rem; /* -20px; */
+    margin-left: 1rem;
+    vertical-align: bottom;
+  }
+  
+  #indexCard .cardHeader .cardHeaderRight {
+    width: 40%;
+    text-align: right;
+  }   
+
+  #indexCard .cardFooter {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin: 0px;
+    float: none;
+    padding: 0px 2rem 2.5rem 2rem;
+  }
+
+  #indexCard .cardFooter .cardFooterLeft {
+    width: 60%;
+  }
+  
+  #indexCard .cardFooter .cardFooterRight {
+    width: 40%;
+    text-align: right;
+  }  
+
+}
+
+
+
+
+/* ***************************************************** */
+/* ***************************************************** */
+/* font faces */
+
+@font-face {
+  font-family: "ARK-L";
+  src: url('../fonts/ARK-ES-DenseLight.otf') format('otf'),
+       url('../fonts/ARK-ES-DenseLight.woff') format('woff');
+}
+@font-face {
+  font-family: "ARK-S";
+  src: url('../fonts/ARK-ES-SolidRegular.otf') format('otf'),
+       url('../fonts/ARK-ES-SolidRegular.woff') format('woff');;
+}
+@font-face {
+  font-family: "NotCourierSans";
+  src: url('../fonts/NotCourierSans.otf') format('otf'),
+       url('../fonts/NotCourierSans-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: "NotCourierSansB";
+  src: url('../fonts/NotCourierSans-Bold.otf') format('otf'),
+       url('../fonts/NotCourierSans-Bold-webfont.woff') format('woff');
+}
+

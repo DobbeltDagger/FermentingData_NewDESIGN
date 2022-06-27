@@ -1,0 +1,231 @@
+/* https://philipwalton.github.io/solved-by-flexbox/demos/grids/ */
+
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  /* padding: 0 1em; /* 0 */
+}
+
+/* right to left */
+.GridReverse {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  list-style: none;
+  margin: 0;
+}
+
+.Grid-cell {
+  flex: 1;
+}
+
+.Grid--flexCells > .Grid-cell {
+  display: flex;
+}
+
+.Grid--top {
+  align-items: flex-start;
+}
+
+.Grid--bottom {
+  align-items: flex-end;
+}
+
+.Grid--center {
+  align-items: center;
+}
+
+.Grid--justifyCenter {
+  justify-content: center;
+}
+
+.Grid-cell--top {
+  align-self: flex-start;
+}
+
+.Grid-cell--bottom {
+  align-self: flex-end;
+}
+
+.Grid-cell--center {
+  align-self: center;
+}
+
+.Grid-cell--autoSize {
+  flex: none;
+}
+
+.Grid--fit > .Grid-cell {
+  flex: 1;
+}
+
+.Grid--full > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--1of2 > .Grid-cell {
+  flex: 0 0 50%;
+}
+
+.Grid--1of3 > .Grid-cell {
+  flex: 0 0 33.3333%;
+}
+
+.Grid--1of4 > .Grid-cell {
+  flex: 0 0 25%;
+}
+
+
+
+
+
+/* *********************************************************************** */
+
+@media {
+  .small-Grid--fit > .Grid-cell {
+    flex: 1;
+  }
+  .small-Grid--full > .Grid-cell {
+    flex: 0 0 100%;
+  }
+  .small-Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .small-Grid--1of3 > .Grid-cell {
+    flex: 0 0 33.3333%;
+  }
+  .small-Grid--1of4 > .Grid-cell {
+    flex: 0 0 25%;
+  }
+}
+
+@media (min-width: 400px) {
+  .med-Grid--fit > .Grid-cell {
+    flex: 1;
+  }
+  .med-Grid--full > .Grid-cell {
+    flex: 0 0 100%;
+  }
+  .med-Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .med-Grid--1of3 > .Grid-cell {
+    flex: 0 0 33.3333%;
+  }
+  .med-Grid--1of4 > .Grid-cell {
+    flex: 0 0 25%;
+  }
+}
+
+@media (min-width: 800px) {
+  .large-Grid--fit > .Grid-cell {
+    flex: 1;
+  }
+  .large-Grid--full > .Grid-cell {
+    flex: 0 0 100%;
+  }
+  .large-Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .large-Grid--1of3 > .Grid-cell {
+    flex: 0 0 33.3333%;
+  }
+  .large-Grid--1of4 > .Grid-cell {
+    flex: 0 0 25%;
+  }
+}
+
+/* grid gutters */
+.Grid--gutters {
+  margin: -1em 0 1em -1em;
+}
+.Grid--gutters > .Grid-cell {
+  padding: 1em 0 0 1em;
+}
+
+.Grid--guttersLg {
+  /* margin: -1.5em 0 1.5em -1.5em; */
+  margin: 0 0 0 -1.5em;
+}
+.Grid--guttersLg > .Grid-cell {
+  /* padding: 1.5em 0 0 1.5em; */
+  padding: 0 0 0 1.5em;
+}
+
+.Grid--guttersXl {
+  /* margin: -2em 0 2em -2em; */
+  margin: 0 0 0 -2em;
+}
+.Grid--guttersXl > .Grid-cell {
+  /* padding: 2em 0 0 2em; */
+  padding: 0 0 0 2em;
+}
+
+
+/* ************************************************************************************* */
+/* ************************************************************************************* */
+/* ************************************************************************************* */
+/* media queries */
+
+
+@media screen {
+
+  /* VISTIS addendum */
+  .g1of2 {
+    flex: 0 0 100%;
+  }
+  .g1of3 {
+    flex: 0 0 33.3333%;
+  }
+  .g2of3 {
+    flex: 0 0 66.6666%;
+  }
+
+  .g3of5 {
+    flex: 0 0 100%;
+  }
+  .g2of5 {
+    flex: 0 0 100%;
+  }
+
+  /* visti menu bar */
+  .gMenuLeft {
+    flex: 0 0 100%;
+  }
+  .gMenuRight {
+    flex: 0 0 100%;
+  }
+
+}
+
+/* ************************************************************************************* */
+@media screen and (min-width: 800px) {
+
+  .g1of2 {
+    flex: 0 0 50%;
+  }
+
+
+  /* visti menu bar */
+  .gMenuLeft {
+    flex: 0 0 300px; /* 50%; */
+  }
+  .gMenuRight {
+    flex: 0 0 calc(100% - 300px); /* 50%; */
+  }
+}
+
+
+/* ************************************************************************************* */
+@media screen and (min-width: 1280px) {
+
+  .g3of5 {
+    flex: 0 0 60%;
+  }
+  .g2of5 {
+    flex: 0 0 40%;
+  }
+
+}

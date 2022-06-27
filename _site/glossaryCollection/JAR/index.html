@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Fermenting Data">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
+  <title>Fermenting Data</title>
+  <link href="/assets/css/grid.css" rel="stylesheet" />
+  <link href="/assets/css/textImageStyles3.css" rel="stylesheet" />
+  <link href="/assets/css/indexCardStyle.css" rel="stylesheet" />
+  <link href="/assets/css/style11.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="pageWrapper">
+    <div id='stickyMenuWrapper' class='unselectable hidden'>
+
+  <div id='btnWrapper'>
+    <a id='burger'>
+      <div id='crossIcon' class='hide'>
+        <svg id='crossSvg' stroke='currentColor' fill='currentColor' stroke-width='0' viewbox='0 0 24 24' size='3rem' height='3rem' width='3rem'>
+          <path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z' />
+        </svg>
+      </div>
+    </a>
+  </div>
+
+  <!-- menu -->
+  <ul class="stickyMobileNav"><li class="listItem"><a href="/bibliography/" class="anchor">Bibliography</a></li>
+<li class="listItem"><a href="/glossary/" class="anchor">Glossary</a></li>
+<li class="listItem"><a href="/about/" class="anchor">About</a></li>
+<li class="listItem"><a href="https://fermentingdata.net/datafolder" class="anchor">Data</a></li></ul>
+
+</div>
+    
+    <div class='insidePage'>
+      
+      <div id='menuWrapper' class='unselectable'>
+
+  <div class='GridReverse Grid--guttersLg'>
+
+    <div class='Grid-cell gMenuRight'>
+      <!-- responsive menu list -->
+      <div id="menuList">        
+        <ul class="mobileNav"><li class="listItem"><a href="/bibliography/" class="anchor">Bibliography</a></li>
+<li class="listItem"><a href="/glossary/" class="anchor">Glossary</a></li>
+<li class="listItem"><a href="/about/" class="anchor">About</a></li>
+<li class="listItem"><a href="https://fermentingdata.net/datafolder" class="anchor">Data</a></li></ul>
+      </div>
+    </div>
+
+    <div class='Grid-cell gMenuLeft'>
+      <div id='logoWrapper'>
+        <div id='wide'>
+          <h1><a href="/">Fermenting Data</a></h1>
+        </div>
+        <div id='narrow'><h1><a href="/">FD</a></h1></div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+      <!-- breaccrumb -->
+      <!-- <div class='breadcrumbWrapper'>
+        <div class='Grid Grid--guttersXl'>
+          <div class='Grid-cell'>
+            
+          </div>
+        </div>
+      </div> -->
+
+      <!-- main section, full width -->
+      <div class='Grid Grid--guttersXl'>
+        <div class="Grid-cell">
+          <section id="main">
+            
+
+  <!-- setting up index card -->
+  <div class='indexCardWrapper'>
+    <div id='indexCard'>
+
+      <!-- bg img for card -->
+      <img src='/assets/images/cardBg_1000x705.png' class='bgImg'/>
+
+      <!-- footer -->
+      <div class='cardHeader'>
+        <div class='cardHeaderLeft'>
+          <span class='lines'>Fermenting</span>
+          <span class='lines'>Data:</span>
+          <span class='lines'>Aarhus</span>
+          <span class='lift'>
+            <span class='lines'>City</span>
+            <span class='lines'>Wide</span>
+            <span class='lines'>Data</span>
+            <span class='lines'>Exhibition</span>
+          </span>
+        </div>
+        <div class='cardHeaderRight'>
+          <span class='lines'>17/09/21&mdash;16/10/2021</span>
+        </div>
+      </div>
+      
+      <!-- main content in the center of card -->
+      <div class='mainContentWrapper'>
+        
+        <div class='mainHeader'>
+          <h2>JAR</h2>
+        </div>
+
+        <div class='mainColumn'>
+          <p><b>JAR</b> java archive repository. This JAR contains digital bodies of code and data. Here follows the source code:</p>
+<!-- this jar contains digital bodies of code and data.
+Here follows the code -->
+<p><div class='jarCode'>// Dithering images import java.io.File; import java.io.IOException; import java.awt.image.BufferedImage; import java.awt.Color; import javax.imageio.ImageIO; // import java.lang.*; import java.lang.Math; public class DitherClass { public static void main(String args[])throws IOException { // get the file path String filePath = new File("").getAbsolutePath(); filePath.concat("path to the property file"); // BufferedImage for source image BufferedImage srcImg = null; File f = null; // Read source image file try { f = new File(filePath + "/bigCab.jpg"); srcImg = ImageIO.read(f); } catch(IOException e) { System.out.println("Error: " + e); } // Get source image dimension int width = srcImg.getWidth(); int height = srcImg.getHeight(); // testing functions float weightings[] = { 0.3f, 0.59f, 0.11f }; BufferedImage resultImg = luminance(weightings, width, height, srcImg); DitherNeighbors neighbors = new DitherNeighbors(); BufferedImage atkinImg = atkinson( width, height, resultImg, neighbors ); // save Dither img try { f = new File(filePath + "/bigCabOut.png"); ImageIO.write(atkinImg, "png", f); } catch(IOException e) { System.out.println("Error: " + e); } } //////////////////////// // Atkinson threshold private static int threshold(int lum) { if (lum < 128) { return 0; } else { return 255; } } //////////////////////// // Atkinson luminance private static BufferedImage luminance( float[] weightings, int width, int height, BufferedImage srcImg ) { if (weightings.length == 0) { weightings[0] = 0.3f; weightings[1] = 0.59f; weightings[2] = 0.11f; } BufferedImage lumImg = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB); for (int y = 0; y < height; y++) { for (int x = 0; x < width; x++) { int p = srcImg.getRGB(x, y); // int a = (p >> 24) & 0xff; int r = (p >> 16) & 0xff; int g = (p >> 8) & 0xff; int b = p & 0xff; int result = Math.round( r * weightings[0] + g * weightings[1] + b * weightings[2] ); Color color = new Color(result, result, result); lumImg.setRGB(x, y, color.getRGB()); } } return lumImg; }</div></p>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class='cardFooter'>
+        <!-- <div class='cardFooterLeft'><a href='#'>#fermenting</a>&nbsp;&nbsp;<a href='#'>#data</a></div> -->
+
+        <!-- https://stackoverflow.com/questions/66261187/11ty-how-to-display-post-tags-in-my-post-njk-file -->
+        <div class='cardFooterLeft'>
+          
+          
+          &nbsp;
+        </div>
+
+        <div class='cardFooterRight'><a href='https://fermentingdata.net/glossary' class='anchor'>https://fermentingdata.net/glossary</a></div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- TEST FOR BACKSIDE CONTENT *********************************************************** -->
+  
+  <div class='indexCardWrapper'>
+    <div id='indexCard'>
+
+      <!-- bg img for card -->
+      <img src='/assets/images/cardBg_1000x705.png' class='bgImg'/>
+
+      <!-- footer -->
+      <div class='cardHeader'>
+        <div class='cardHeaderLeft'>
+          <span class='lines'>Fermenting</span>
+          <span class='lines'>Data</span>
+          <span class='lines'>Aarhus</span>
+          <span class='lift'><span class='lines'>More info here</span></span>
+        </div>
+        <div class='cardHeaderRight'>
+          <span class='lines'>17/09/21&mdash;16/10/2021</span>
+        </div>
+      </div>
+      
+      <!-- main content in the center of card -->
+      <div class='mainContentWrapper'>
+        
+        <div class='mainHeader'>
+          <h2>JAR</h2>
+        </div>
+
+        <div class='mainColumn'>
+          <p><div class="jarCode">//////////////////////// // Atkinson luminance private static BufferedImage atkinson( int width, int height, BufferedImage lumImg, DitherNeighbors neighbours ) { int mono; int diff; for (int y = 0; y < height; y++) { for (int x = 0; x < width; x++) { int p = lumImg.getRGB(x, y); int blue = p & 0xff; mono = threshold(blue); diff = blue - mono; // set current pixel Color newColor = new Color(mono, mono, mono); lumImg.setRGB(x, y, newColor.getRGB()); int spread = (int) Math.floor(diff / 8); for (var j = 0; j < neighbours.pos.length; j++) { int xOffset = neighbours.pos[j].getX(); int yOffset = neighbours.pos[j].getY(); int xall = x + xOffset; int yall = y + yOffset; // check for out of bounds! if (x + xOffset >= width || x + xOffset < 0 || y + yOffset >= height || y + yOffset < 0 ) { break; } int getColor = lumImg.getRGB(xall, yall); int bb = getColor & 0xff; int newVal = bb + spread; lumImg.setRGB(xall, yall, newVal); } } } return lumImg; } } public class DitherNeighbors { public Coord[] pos = new Coord[6]; DitherNeighbors() { // defining neighbors pos[0] = new Coord(1, 0); pos[1] = new Coord(2, 0); pos[2] = new Coord(-1, 1); pos[3] = new Coord(0, 1); pos[4] = new Coord(1, 1); pos[5] = new Coord(0, 2); } public static void main(String args[]){ System.out.println("DitherNeighbors run"); } public int[] getPos(int index) { int[] retObj = { -999, -999 }; retObj[0] = pos[index].x; retObj[1] = pos[index].y; return retObj; }}</div></p>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class='cardFooter'>
+        <!-- <div class='cardFooterLeft'><a href='#'>#fermenting</a>&nbsp;&nbsp;<a href='#'>#data</a></div> -->
+
+        <!-- https://stackoverflow.com/questions/66261187/11ty-how-to-display-post-tags-in-my-post-njk-file -->
+        <div class='cardFooterLeft'>
+          
+          
+          &nbsp;
+        </div>
+
+        <div class='cardFooterRight'><a href='#'>https://fermentingdata.net/glossary</a></div>
+      </div>
+
+    </div>
+  </div>
+  
+
+
+          </section>
+        </div>
+      </div>
+
+      <!-- sections, in grid -->
+      <div class="Grid Grid--guttersXl">
+
+        <!-- left -->
+        <div class="Grid-cell g3of5">
+          <section id="mainLeft">
+            
+
+
+
+          </section>
+        </div>
+
+        <!-- right -->
+        <div class="Grid-cell g2of5">
+          <section id="mainRight">
+            
+
+
+
+          </section>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- scripts -->
+  <script src='/assets/js/functions.js'></script>
+  <script>
+
+    // all is loaded
+    window.addEventListener("DOMContentLoaded", function() {
+      console.log("All is loaded");
+
+      /*
+      let burgerBtn = document.getElementById('burger');
+      burgerBtn.addEventListener('click', function() {
+        console.log("button was clicked");
+        document.getElementById('menuList').classList.toggle('hide');
+        document.getElementById('crossIcon').classList.toggle('hide');
+      });
+      */
+
+      // can i do this here?
+      linkopener(true);
+
+      // on resize
+      window.onresize = resize;
+      resize();
+
+    })
+  </script>
+</body>
+
