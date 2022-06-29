@@ -216,10 +216,23 @@ a:visited {
 		line-height: 1.5em;
 	}
 
+	.nav-buttons {
+    font-size: 1rem;
+    line-height: 1rem;
+    grid-template-columns: max-content;
+    grid-row-gap: 1rem;
+	}
+
 	.main {
-		margin-top: 30vh;
+		margin-top: 20vh;
 		margin-right: 4vw;
 		margin-bottom: 1em;
+	}
+
+	.pageheading {
+		margin-right: 0;
+		font-size: 1.35rem;
+		line-height: 2 rem;
 	}
 
 	.colophon p{
