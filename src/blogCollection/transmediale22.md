@@ -1,11 +1,11 @@
 ---
 title: "Calculation Otherwise"
 description: "transmediale2022"
-thumbUrl: '/assets/images/blog/large/trns1.JPG'
-imgUrl: '/assets/images/blog/large/trns1.JPG'
+thumbUrl: '/assets/images/blog/large/trns1.jpg'
+imgUrl: '/assets/images/blog/large/trns1.jpg'
 summary: 'Fermenting Data, presented by Magda Tyżlik-Carver, was part of Calculation Otherwise, a panel during transmediale festival 2022. Chaired by Maya Indira Ganesh, the panel included presentation of works by Mary Maggic, Sami Bhowmik and Timothée Parrique. [Documentation online]'
 gallery:
-- { caption: "©transmediale", url: "/assets/images/blog/large/trns1.JPG" }
+- { caption: "©transmediale", url: "/assets/images/blog/large/trns1.jpg" }
 tags:
   - blog
   - research
@@ -15,14 +15,14 @@ eleventyExcludeFromCollections: false
 ---
 
 <div class="columnImage">
-  <img src="/assets/images/blog/large/trns1.JPG"/>
+  <img src="/assets/images/blog/large/trns1.jpg"/>
   <div class="©transmediale"></div>
 </div>
 
 transemdiale symposium panel, titled Calculation Otherwise, presented different techniques of knowing engaged in data collection and the classification of information showing how calculation can be reimagined, exploring values beyond number and measure to facilitate new, more careful scales. Fermenting Data was one of the projects along the work of Mary Maggic GENITAL( * )PANIC which is a response to the policing of non-normative bodies in the midst of rising environmental toxicity; Samir Bhowmik's talk on the subjects of extractivism and terraforming as construction of subjectivities; and Timothée Parrique talked about degrowth and simulation by GDP, an indicator of economic activity contained in a single number. 
 
 <div class="columnImage">
-  <a href="https://202122.transmediale.de/almanac/calculation-otherwise"> <img src="/assets/images/blog/large/trns2.JPG"></a>
+  <a href="https://202122.transmediale.de/almanac/calculation-otherwise"> <img src="/assets/images/blog/large/trns2.jpg"></a>
   <div class="Documentation link"></div>
 </div>
 
