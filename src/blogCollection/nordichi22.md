@@ -3,7 +3,7 @@ title: "EXTENDED DEADLINE Call for Participation in Curating/Fermenting Data wor
 description: "Curating/Fermenting Data workshop"
 thumbUrl: '/assets/images/blog/large/nordichi.png'
 imgUrl: '/assets/images/blog/large/nordichi.png'
-summary: 'Call for Participation in the workshop Curating/Fermenting Data: data workflows for semantic web applications. Deadline for submission on 28 August 17.00 CET. '
+summary: 'Call for Participation in the workshop Curating/Fermenting Data: data workflows for semantic web applications. NEW DEADLINE for submission on 28 August 17.00 CET. '
 gallery:
 - { caption: "", url: "/assets/images/blog/large/nordichi.png" }
 tags:

@@ -19,7 +19,7 @@ eleventyExcludeFromCollections: false
   <div class="©transmediale"></div>
 </div>
 
-transemdiale symposium panel, titled Calculation Otherwise, presented different techniques of knowing engaged in data collection and the classification of information showing how calculation can be reimagined, exploring values beyond number and measure to facilitate new, more careful scales. Fermenting Data was one of the projects along the work of Mary Maggic GENITAL( * )PANIC which is a response to the policing of non-normative bodies in the midst of rising environmental toxicity; Samir Bhowmik's talk on the subjects of extractivism and terraforming as construction of subjectivities; and Timothée Parrique talked about degrowth and simulation by GDP, an indicator of economic activity contained in a single number. 
+transmediale symposium panel, titled Calculation Otherwise, presented different techniques of knowing engaged in data collection and the classification of information showing how calculation can be reimagined, exploring values beyond number and measure to facilitate new, more careful scales. Fermenting Data was one of the projects along the work of Mary Maggic GENITAL( * )PANIC which is a response to the policing of non-normative bodies in the midst of rising environmental toxicity; Samir Bhowmik's talk on the subjects of extractivism and terraforming as construction of subjectivities; and Timothée Parrique talked about degrowth and simulation by GDP, an indicator of economic activity contained in a single number. 
 
 <div class="columnImage">
   <a href="https://202122.transmediale.de/almanac/calculation-otherwise"> <img src="/assets/images/blog/large/trns2.jpg"></a>
