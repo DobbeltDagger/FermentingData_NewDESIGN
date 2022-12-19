@@ -26,11 +26,11 @@
 
 body { 
 	font-family: "NotCourierSans";
-	background: rgb(232 200 183 / 45%);
-	background: linear-gradient(180deg, #afd7b085 0%, rgb(232 200 183 / 45%) 52%, rgb(183 178 111 / 28%) 100%);
+	background: rgb(250 212 155 / 45%);
+  background: linear-gradient(180deg, #efd85585 0%, rgb(244 136 148 / 45%) 52%, rgb(127 203 202 / 28%) 100%);
 	color: #0000ff;
 	font-size: 1.2rem;
-    line-height: 1.6rem;
+  line-height: 1.6rem;
 	margin: 0;
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
